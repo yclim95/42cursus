@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 09:14:36 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/23 11:11:12 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/05/24 12:28:21 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-void				*ft_memset(void *dest, int c, size_t n);
+void				*ft_memset(void *ptr, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
