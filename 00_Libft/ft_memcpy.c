@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 14:38:36 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/24 14:43:16 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/05/25 11:02:03 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		return (0);
 	while (n-- > 0)
 	{
-		*pdest = *src;
+		*pdest = *psrc;
 		pdest++;
-		src++;
+		psrc++;
 	}
 	return (dest);
 }
