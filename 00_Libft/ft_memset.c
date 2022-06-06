@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:03:59 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/24 12:27:18 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 09:16:28 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *ptr, int c, size_t n)
 {
-	char *s;
+	char	*s;
 
 	s = ptr;
 	while (n-- > 0)

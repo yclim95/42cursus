@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 08:22:58 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/24 08:27:35 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 07:40:35 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_atoi(const char *nptr)
 
 	num = 0;
 	sign = 1;
-
 	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
 	if (*nptr == '-')

@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:28:35 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/23 11:34:05 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 08:13:15 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int nbr;
+	int	nbr;
 
 	nbr = n;
 	if (nbr < 0)
 	{
-		ft_putchar_fd('-',fd);
+		ft_putchar_fd('-', fd);
 		nbr = -n;
 	}
 	if (nbr >= 10)

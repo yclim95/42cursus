@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 19:08:41 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/30 20:16:03 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 08:03:02 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,28 +36,40 @@ static size_t	ft_num_len(int n)
 	return (c);
 }
 
+static size_t	ft_set_len(int n)
+{
+	size_t	len;
+
+	if (n < 0)
+		len = ft_num_len(n) + 1;
+	else
+		len = ft_num_len(n);
+	return (len);
+}
+
+static unsigned int	ft_set_sign(int n, unsigned int num)
+{
+	if (n < 0)
+		return (-num);
+	return (num);
+}
+
 char	*ft_itoa(int n)
 {
-	size_t		len;
+	size_t			len;
 	unsigned int	num;
-	char		*pt_itoa;
+	char			*pt_itoa;
 
 	num = n;
 	if (n == 0)
 		return (ft_strdup("0"));
 	else
 	{
-		if (n < 0)
-			len = ft_num_len(n) + 1;
-		else
-			len = ft_num_len(n);
+		len = ft_set_len(n);
 		pt_itoa = malloc(sizeof(char) * (len + 1));
 		if (!pt_itoa)
 			return (NULL);
-		if (n < 0)
-			num = -num;
-		else
-			num = num;
+		num = ft_set_sign(n, num);
 		ft_putnbr(pt_itoa + len - 1, num);
 		if (n < 0)
 			*pt_itoa = '-';

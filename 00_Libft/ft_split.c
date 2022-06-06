@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 08:49:33 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/01 13:34:34 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 08:56:50 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static size_t	ft_word_count(char const *s, char c)
 {
 	size_t	count;
-	
+
 	count = 0;
 	while (*s)
 	{
@@ -28,12 +28,12 @@ static size_t	ft_word_count(char const *s, char c)
 	return (count);
 }
 
-static size_t	ft_word_len (char const *s, char c)
+static size_t	ft_word_len(char const *s, char c)
 {
 	size_t	len;
 
 	len = 0;
-	while (*s !=c && *s)
+	while (*s != c && *s)
 	{
 		len++;
 		s++;
@@ -85,13 +85,9 @@ char	**ft_split(char const *s, char c)
 		wordlen = ft_word_len(s, c);
 		pt_split[i] = ft_strndup(s, wordlen);
 		if (!pt_split[i])
-		{
 			ft_arr_free(pt_split, i);
-			return (NULL);
-		}
 		s += wordlen;
 		i++;
-
 	}
 	pt_split[len] = '\0';
 	return (pt_split);

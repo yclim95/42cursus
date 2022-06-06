@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:29:52 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/25 11:33:13 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 08:14:20 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	len = ft_strlen(src);
 	if (len + 1 < size)
 	{
-		ft_memcpy(dest,src,len);
+		ft_memcpy(dest, src, len);
 		dest[len] = '\0';
 	}
 	if (size != 0)
 	{
-		ft_memcpy(dest,src,size - 1);
+		ft_memcpy(dest, src, size - 1);
 		dest[size - 1] = '\0';
 	}
 	return (len);
