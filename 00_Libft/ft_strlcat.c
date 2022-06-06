@@ -6,11 +6,11 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 15:21:47 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/27 08:24:38 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/06 08:11:16 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_strlcat.c"
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
