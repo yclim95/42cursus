@@ -6,7 +6,7 @@
 #    By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 18:09:24 by lyao-che          #+#    #+#              #
-#    Updated: 2022/06/10 11:58:51 by lyao-che         ###   ########.fr        #
+#    Updated: 2022/06/10 12:13:41 by lyao-che         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ SRC_PART2 = ./ftsubstr.c	\
 			./ft_putendl_fd.c	\
 			./ft_putnbr_fd.c
 
-SRCS = $(SRC_PART1) $(SRC_PART2)
+SRCS = $(SRC_PART1)  $(SRC_PART2)
 
 OBJS = $(SRCS:.c=.o)
 
@@ -73,8 +73,10 @@ fclean : clean
 
 re : fclean all
 
-.c.o : $(SRCS) $(INCLUDES) $(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+.c.o : $(SRCS) $(INCLUDES)
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
-$(NAME) : $(OBJS) $(AR) $(ARFLAGS) $@ $^
+$(NAME) : $(OBJS)
+	$(AR) $(ARFLAGS) $@ $^
 
 .PHONY: all clean fclean re
