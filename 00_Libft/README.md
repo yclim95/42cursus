@@ -115,3 +115,101 @@ drwxr-xr-x  24 lyao-che  2022_kuala-lumpur    816 10 Jun 14:19 ..
 -rw-r--r--   1 lyao-che  2022_kuala-lumpur  32240 10 Jun 14:43 libft.a
 -rw-r--r--   1 lyao-che  2022_kuala-lumpur   2471  6 Jun 10:38 libft.h
 ```
+
+
+## Testing
+
+1. [42KL Libft Testing Recommended](https://github.com/jtoty/Libftest)
+2. [42KL Libft Testing Recommended](https://github.com/Tripouille/libftTester)
+
+```
+--------------------------------------------------------------------------------------------
+|                                     CHECKING FILES|
+--------------------------------------------------------------------------------------------
+Makefile      -Wall     -Wextra   -Werror
+found         ok        ok        ok
+
+Header file   Norme
+found         ok
+
+--------------------------------------------------------------------------------------------
+|                                    COMPILING LIBFT|
+--------------------------------------------------------------------------------------------
+rule all        rule $(NAME)     rule clean       rule fclean     make relibft.a
+found           found            found            found           okfound
+
+--------------------------------------------------------------------------------------------
+|                                     STARTING TESTS|
+--------------------------------------------------------------------------------------------
+
+Part1 functions
+
+FUNCTION              NORME          COMPIL.     FORBIDDEN FUNC.  TESTSRESULT
+ft_atoi               ok             success     clean            ✓✗✓✓✓✓✗✗✗✗✗✗✗✓✓✓✗✗✓KO
+ft_bzero              ok             success     clean            ✓✓OK
+ft_calloc             ok             success     clean            ✓OK
+ft_isalnum            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_isalpha            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_isascii            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_isdigit            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_isprint            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_memccpy            NTI            NTI         NTI              NTINTI
+ft_memchr             ok             success     clean            ✓✓✓✓✓✓OK
+ft_memcmp             ok             success     clean            ✓✓✓✓✓✓✓✓✓OK
+ft_memcpy             ok             success     clean            ✓✓✓OK
+ft_memmove            check failed   success     clean            ✓✓✓✗✓KO
+ft_memset             ok             success     clean            ✓✓✓✓OK
+ft_strchr             ok             success     clean            ✓✓✓✓✓✓OK
+ft_strdup             ok             success     clean            ✓OK
+ft_strlcat            ok             success     clean            ✓✓✓✓✓✓✓✓✓OK
+ft_strlcpy            ok             success     clean            ✗✗✓✓✓KO
+ft_strlen             ok             success     clean            ✓✓✓✓✓✓OK
+ft_strncmp            ok             success     clean            ✓✓✓✓✓✓✓✓✓✓✓OK
+ft_strnstr            ok             success     clean            ✓✓✓✓✓✓✓✓✓✓OK
+ft_strrchr            ok             success     clean            ✓✓✓✓✓✓✓✓OK
+ft_tolower            ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_toupper            ok             success     clean            ✓✓✓✓✓✓✓OK
+
+Total : 20/24
+
+Part2 functions
+
+FUNCTION              NORME          COMPIL.     FORBIDDEN FUNC.  TESTSRESULT
+ft_itoa               ok             success     clean            ✓✓✓✓✓✓✓✓✓✓OK
+ft_putchar_fd         ok             success     clean            ✓✓✓✓✓✓✓OK
+ft_putendl_fd         ok             success     clean            ✓✓✓✓OK
+ft_putnbr_fd          ok             success     clean            ✓✓✓✓✓✓✓✓✗KO
+ft_putstr_fd          ok             success     clean            ✓✓✓✓OK
+ft_split              ok             success     clean            ✗✓✗✓✓KO
+ft_strjoin            ok             success     clean            ✓✓✓✓OK
+ft_strmapi            ok             success     clean            ✓OK
+ft_strtrim            ok             success     clean            ✗✗✗✗✓KO
+ft_substr             ok             success     clean            ✓✓✓✓OK
+
+Total : 7/10
+
+Bonus functions
+
+FUNCTION              NORME          COMPIL.     FORBIDDEN FUNC.  TESTSRESULT
+ft_lstadd_back        NTI            NTI         NTI              NTINTI
+ft_lstadd_front       NTI            NTI         NTI              NTINTI
+ft_lstclear           NTI            NTI         NTI              NTINTI
+ft_lstdelone          NTI            NTI         NTI              NTINTI
+ft_lstiter            NTI            NTI         NTI              NTINTI
+ft_lstlast            NTI            NTI         NTI              NTINTI
+ft_lstmap             NTI            NTI         NTI              NTINTI
+ft_lstnew             NTI            NTI         NTI              NTINTI
+ft_lstsize            NTI            NTI         NTI              NTINTI
+
+Total : 0/9
+
+Additional functions
+
+FUNCTION              NORME          COMPIL.     FORBIDDEN FUNC.  TESTSRESULT
+ft_striteri           ok             success     clean            ✓OK
+
+Total : 1/1
+Abort : A Bus error : B Segmentation fault : S Timeout : T Nothing turned in : NTI
+
+A deepthought file has been generated in /Users/lyao-che/Desktop/00_Libft/Libftest
+```
