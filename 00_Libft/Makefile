@@ -6,7 +6,7 @@
 #    By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 18:09:24 by lyao-che          #+#    #+#              #
-#    Updated: 2022/06/10 12:13:41 by lyao-che         ###   ########.fr        #
+#    Updated: 2022/06/10 14:16:52 by lyao-che         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ RMFLAG = -f
 
 INCLUDES = ./libft.h
 
-SRC_PART1 = ./ft_isaplha.c	\
+SRC_PART1 = ./ft_isalpha.c	\
 			./ft_isdigit.c	\
 			./ft_isalnum.c	\
 			./ft_isascii.c	\
