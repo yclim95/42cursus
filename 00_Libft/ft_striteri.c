@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 15:36:58 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/06 09:19:16 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/10 14:43:17 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		return ;
 	i = 0;
 	while (s[i])
-		f(i++, s + i);
+	{
+		f(i, s + i);
+		i++;
+	}
 }

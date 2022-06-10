@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 08:49:33 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/06 08:56:50 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/10 14:40:52 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 	size_t	wordlen;
 	size_t	i;
 
-	len = ft_word_counts(s, c);
+	len = ft_word_count(s, c);
 	pt_split = malloc(sizeof (char *) * (len + 1));
 	if (!pt_split)
 		return (NULL);
@@ -89,6 +89,6 @@ char	**ft_split(char const *s, char c)
 		s += wordlen;
 		i++;
 	}
-	pt_split[len] = '\0';
+	pt_split[len] = NULL;
 	return (pt_split);
 }

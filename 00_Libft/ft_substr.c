@@ -6,19 +6,19 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 14:13:00 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/27 14:37:32 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/10 14:35:45 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr_pt;
 
 	if (ft_strlen(s) < start)
 		return (ft_strdup(""));
-	substr_pt = malloc((ft_strlen(s) + 1) + size(char));
+	substr_pt = malloc((ft_strlen(s) + 1) + sizeof(char));
 	if (!substr_pt)
 		return (0);
 	ft_memcpy(substr_pt, start + s, len);

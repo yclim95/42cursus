@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 11:23:47 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/06 08:15:24 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/10 14:29:40 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	result = malloc(nmemb * size);
 	if (!result)
 		return (0);
-	ft_bezero(result, nmemb * size);
+	ft_bzero(result, nmemb * size);
 	return (result);
 }
