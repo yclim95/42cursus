@@ -123,6 +123,12 @@ drwxr-xr-x  24 lyao-che  2022_kuala-lumpur    816 10 Jun 14:19 ..
 2. [42KL Libft Testing Recommended](https://github.com/Tripouille/libftTester)
 
 ```
+lyao-che@u91z06s02 Libftest % bash grademe.sh
+Checking for updates...
+No updates available.
+
+Copying files...
+Please wait a moment.
 --------------------------------------------------------------------------------------------
 |                                     CHECKING FILES|
 --------------------------------------------------------------------------------------------
@@ -157,7 +163,7 @@ ft_memccpy            NTI            NTI         NTI              NTINTI
 ft_memchr             ok             success     clean            ✓✓✓✓✓✓OK
 ft_memcmp             ok             success     clean            ✓✓✓✓✓✓✓✓✓OK
 ft_memcpy             ok             success     clean            ✓✓✓OK
-ft_memmove            check failed   success     clean            ✓✓✓✗✓KO
+ft_memmove            ok             success     clean            ✓✓✓✗✓KO
 ft_memset             ok             success     clean            ✓✓✓✓OK
 ft_strchr             ok             success     clean            ✓✓✓✓✓✓OK
 ft_strdup             ok             success     clean            ✓OK
