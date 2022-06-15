@@ -189,10 +189,10 @@ ft_putstr_fd          ok             success     clean            ✓✓✓✓OK
 ft_split              ok             success     clean            ✓✓✓✓✓OK
 ft_strjoin            ok             success     clean            ✓✓✓✓OK
 ft_strmapi            ok             success     clean            ✓OK
-ft_strtrim            ok             success     clean            ✗✗✗✗✓KO
+ft_strtrim            ok             success     clean            ✓✓✓✓✓OK
 ft_substr             ok             success     clean            ✓✓✓✓OK
 
-Total : 9/10
+Total : 10/10
 
 Bonus functions
 
