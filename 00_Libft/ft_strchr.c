@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 09:01:52 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/25 09:12:11 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/15 11:12:46 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	while (*s != c)
 	{
 		if (*s == '\0')
-			return (0);
+			return (NULL);
 		s++;
 	}
 	return ((char *)s);
