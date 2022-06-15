@@ -123,7 +123,7 @@ drwxr-xr-x  24 lyao-che  2022_kuala-lumpur    816 10 Jun 14:19 ..
 2. [42KL Libft Testing Recommended](https://github.com/Tripouille/libftTester)
 
 ```
-lyao-che@u91z06s02 Libftest % bash grademe.sh
+lyao-che@u80z03s02 Libftest % bash grademe.sh
 Checking for updates...
 No updates available.
 
@@ -151,7 +151,7 @@ found           found            found            found           okfound
 Part1 functions
 
 FUNCTION              NORME          COMPIL.     FORBIDDEN FUNC.  TESTSRESULT
-ft_atoi               ok             success     clean            ✓✗✓✓✓✓✗✗✗✗✗✗✗✓✓✓✗✗✓KO
+ft_atoi               ok             success     clean            ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓OK
 ft_bzero              ok             success     clean            ✓✓OK
 ft_calloc             ok             success     clean            ✓OK
 ft_isalnum            ok             success     clean            ✓✓✓✓✓✓✓OK
@@ -176,7 +176,7 @@ ft_strrchr            ok             success     clean            ✓✓✓✓�
 ft_tolower            ok             success     clean            ✓✓✓✓✓✓✓OK
 ft_toupper            ok             success     clean            ✓✓✓✓✓✓✓OK
 
-Total : 20/24
+Total : 21/24
 
 Part2 functions
 
