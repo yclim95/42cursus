@@ -163,7 +163,7 @@ ft_memccpy            NTI            NTI         NTI              NTINTI
 ft_memchr             ok             success     clean            ✓✓✓✓✓✓OK
 ft_memcmp             ok             success     clean            ✓✓✓✓✓✓✓✓✓OK
 ft_memcpy             ok             success     clean            ✓✓✓OK
-ft_memmove            ok             success     clean            ✓✓✓✗✓KO
+ft_memmove            ok             success     clean            ✓✓✓✓✓OK
 ft_memset             ok             success     clean            ✓✓✓✓OK
 ft_strchr             ok             success     clean            ✓✓✓✓✓✓OK
 ft_strdup             ok             success     clean            ✓OK
@@ -176,7 +176,7 @@ ft_strrchr            ok             success     clean            ✓✓✓✓�
 ft_tolower            ok             success     clean            ✓✓✓✓✓✓✓OK
 ft_toupper            ok             success     clean            ✓✓✓✓✓✓✓OK
 
-Total : 21/24
+Total : 22/24
 
 Part2 functions
 
