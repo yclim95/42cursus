@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 08:49:33 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/10 14:40:52 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/15 09:52:03 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@ static size_t	ft_word_count(char const *s, char c)
 	size_t	count;
 
 	count = 0;
+	while (*s == c && *s)
+		s++;
 	while (*s)
 	{
-		while (*s == c && *s)
-			s++;
 		while (*s != c && *s)
+			s++;
+		while (*s == c && *s)
 			s++;
 		count++;
 	}
@@ -48,7 +50,7 @@ static char	*ft_strndup(const char *s, size_t n)
 
 	pt_strndup = malloc(sizeof(char) * (n + 1));
 	if (!pt_strndup)
-		return (NULL);
+		return (0);
 	size = 0;
 	while (size < n)
 	{
@@ -59,11 +61,12 @@ static char	*ft_strndup(const char *s, size_t n)
 	return (pt_strndup);
 }
 
-static void	ft_arr_free(char **s, int i)
+static char	*ft_arr_free(char **s, int i)
 {
 	while (i--)
 		free(s[i]);
 	free(s);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
