@@ -393,14 +393,14 @@ a color code will tell you if your function is protected/not BUT stay coherent !
 (______)(______)(______)(______)(______)(______)(______)(___
 
 ft_substr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] [OK]
-ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [🛡 ]
 ft_strtrim:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
-ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
 ft_itoa:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strmapi:    [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_strmapi:    [OK] [OK] [OK] [OK] [OK] [🛡 ]
 ft_putchar_fd: [OK] [OK]
-ft_putstr_fd:  [OK] [OK] [💥 ]
-ft_putendl_fd: [OK] [OK] [💥 ]
+ft_putstr_fd:  [OK] [OK] [🛡 ]
+ft_putendl_fd: [OK] [OK] [🛡 ]
 ft_putnbr_fd:  [OK] [OK] [OK] [OK] [OK]
 
  /~~~\/~~\/~~~\/~~~\/~~\/~~~\                    /~~~\/~~\/~~~\/~~~\/~~\/~~~\
