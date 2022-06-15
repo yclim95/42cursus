@@ -341,7 +341,6 @@ ar crs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o 
 make[1]: *** No rule to make target `bonus'.  Stop.
  cp ../libft/libft.a assets/
 ➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so
-
 lyao-che@u80z03s02 libft-unit-test % make f
  make -j 3 -C ../libft
 make[1]: Nothing to be done for `all'.
@@ -393,9 +392,7 @@ a color code will tell you if your function is protected/not BUT stay coherent !
  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)
 (______)(______)(______)(______)(______)(______)(______)(___
 
-ft_substr:     [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [🛡 ] [OK]
-[fail]: your substr did not allocate the good size so the \0 test may be false
-
+ft_substr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] [OK]
 ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [💥 ]
 ft_strtrim:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
 ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [💥 ]
@@ -422,8 +419,6 @@ ft_lstdelone:  [MISSING]
 ft_lstclear:   [MISSING]
 ft_lstiter:    [MISSING]
 ft_lstmap:     [MISSING]
-ft_striteri:   [OK] [OK] [🛡 ] dyld: warning: could not load inserted library './assets/malloc.dylib' into hardened process because no suitable image found.  Did find:
-	./assets/malloc.dylib: code signature in (./assets/malloc.dylib) not valid for use in process using Library Validation: mapped file has no cdhash, completely unsigned? Code has to be at least ad-hoc signed.
-
+ft_striteri:   [OK] [OK] [🛡 ]
 See result.log for more informations !
 ```
