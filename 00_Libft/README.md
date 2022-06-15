@@ -219,3 +219,81 @@ Abort : A Bus error : B Segmentation fault : S Timeout : T Nothing turned in : N
 
 A deepthought file has been generated in /Users/lyao-che/Desktop/00_Libft/Libftest
 ```
+
+
+```
+lyao-che@u80z03s02 LibftTester % make m
+Already up to date.
+If all your tests are OK and the moulinette KO you, please run the tester with valgrind (see README)
+make -C /Users/lyao-che/Desktop/00_Libft
+gcc  -c ft_isalpha.c -o ft_isalpha.o
+gcc  -c ft_isdigit.c -o ft_isdigit.o
+gcc  -c ft_isalnum.c -o ft_isalnum.o
+gcc  -c ft_isascii.c -o ft_isascii.o
+gcc  -c ft_isprint.c -o ft_isprint.o
+gcc  -c ft_strlen.c -o ft_strlen.o
+gcc  -c ft_memset.c -o ft_memset.o
+gcc  -c ft_bzero.c -o ft_bzero.o
+gcc  -c ft_memcpy.c -o ft_memcpy.o
+gcc  -c ft_memmove.c -o ft_memmove.o
+gcc  -c ft_strlcpy.c -o ft_strlcpy.o
+gcc  -c ft_strlcat.c -o ft_strlcat.o
+gcc  -c ft_toupper.c -o ft_toupper.o
+gcc  -c ft_tolower.c -o ft_tolower.o
+gcc  -c ft_strchr.c -o ft_strchr.o
+gcc  -c ft_strrchr.c -o ft_strrchr.o
+gcc  -c ft_strncmp.c -o ft_strncmp.o
+gcc  -c ft_memchr.c -o ft_memchr.o
+gcc  -c ft_memcmp.c -o ft_memcmp.o
+gcc  -c ft_strnstr.c -o ft_strnstr.o
+gcc  -c ft_atoi.c -o ft_atoi.o
+gcc  -c ft_calloc.c -o ft_calloc.o
+gcc  -c ft_strdup.c -o ft_strdup.o
+gcc  -c ft_substr.c -o ft_substr.o
+gcc  -c ft_strjoin.c -o ft_strjoin.o
+gcc  -c ft_strtrim.c -o ft_strtrim.o
+gcc  -c ft_split.c -o ft_split.o
+gcc  -c ft_itoa.c -o ft_itoa.o
+gcc  -c ft_strmapi.c -o ft_strmapi.o
+gcc  -c ft_striteri.c -o ft_striteri.o
+gcc  -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc  -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc  -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc  -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar crs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+[Mandatory]
+ft_memset	: 1.OK 2.OK
+ft_bzero	: 1.OK 2.OK 3.OK
+ft_memcpy	: 1.OK 2.OK
+ft_memmove	: 1.OK 2.OK 3.OK 4.OK
+ft_memchr	: 1.OK 2.OK 3.OK 4.OK 5.OK
+ft_memcmp	: 1.OK 2.OK 3.OK 4.OK 5.OK
+ft_strlen	: 1.OK 2.OK
+ft_isalpha	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK
+ft_isdigit	: 1.OK 2.OK 3.OK 4.OK
+ft_isalnum	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK 11.OK 12.OK
+ft_isascii	: 1.OK 2.OK 3.OK 4.OK
+ft_isprint	: 1.OK 2.OK 3.OK 4.OK
+ft_toupper	: 1.OK 2.OK 3.OK 4.OK
+ft_tolower	: 1.OK 2.OK 3.OK 4.OK
+ft_strchr	: 1.OK 2.OK 3.OK 4.OK 5.KO
+ft_strrchr	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.KO 7.OK
+ft_strncmp	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK 11.OK 12.OK 13.OK 14.OK 15.OK 16.OK
+ft_strlcpy	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK
+ft_strlcat	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK 11.OK 12.OK 13.OK 14.OK 15.OK 16.OK 17.OK
+ft_strnstr	: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK 11.OK 12.OK 13.OK 14.OK
+ft_atoi		: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK 11.OK 12.OK 13.OK 14.OK 15.OK 16.OK 17.OK
+ft_calloc	: 1.OK 2.MOK 3.KO
+ft_strdup	: 1.OK 2.MOK 3.OK 4.MOK
+ft_substr	: 1.OK 2.MOK LEAKS.KO [0x3736353433323130 : 14130924396493112] 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 9.OK 10.MOK 11.OK 12.MOK 13.OK 14.MKO 15.OK 16.MOK
+ft_strjoin	: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK
+ft_strtrim	: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 9.OK 10.MOK 11.OK 12.MOK 13.OK 14.MOK 15.OK 16.MOK
+ft_split	: 1.MOK 2.OK 3.MOK 4.OK 5.MOK 6.OK 7.OK 8.OK 9.OK 10.OK 11.MOK 12.OK 13.OK 14.MOK 15.OK 16.MOK 17.OK 18.OK 19.MOK 20.OK 21.OK 22.MOK 23.OK 24.OK 25.MOK 26.OK 27.MOK 28.OK 29.MOK 30.OK 31.MOK 32.OK 33.MOK 34.OK 35.MOK 36.OK 37.MOK 38.OK 39.MOK 40.OK 41.MOK 42.OK
+ft_itoa		: 1.OK 2.MOK 3.OK 4.MOK 5.OK 6.MOK 7.OK 8.MOK 9.OK 10.MOK 11.OK 12.MOK
+ft_strmapi	: 1.OK 2.MOK 3.OK 4.MOK
+ft_putchar_fd	: 1.OK
+ft_putstr_fd	: 1.OK
+ft_putendl_fd	: 1.OK
+ft_putnbr_fd	: 1.OK 2.OK 3.OK 4.OK 5.OK
+ft_striteri	: 1.OK 2.OK 3.OK
+```
