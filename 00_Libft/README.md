@@ -168,7 +168,7 @@ ft_memset             ok             success     clean            ✓✓✓✓OK
 ft_strchr             ok             success     clean            ✓✓✓✓✓✓OK
 ft_strdup             ok             success     clean            ✓OK
 ft_strlcat            ok             success     clean            ✓✓✓✓✓✓✓✓✓OK
-ft_strlcpy            ok             success     clean            ✗✗✓✓✓KO
+ft_strlcpy            ok             success     clean            ✓✓✓✓✓OK
 ft_strlen             ok             success     clean            ✓✓✓✓✓✓OK
 ft_strncmp            ok             success     clean            ✓✓✓✓✓✓✓✓✓✓✓OK
 ft_strnstr            ok             success     clean            ✓✓✓✓✓✓✓✓✓✓OK
@@ -176,7 +176,7 @@ ft_strrchr            ok             success     clean            ✓✓✓✓�
 ft_tolower            ok             success     clean            ✓✓✓✓✓✓✓OK
 ft_toupper            ok             success     clean            ✓✓✓✓✓✓✓OK
 
-Total : 22/24
+Total : 23/24
 
 Part2 functions
 
