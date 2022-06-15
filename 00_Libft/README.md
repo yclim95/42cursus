@@ -297,3 +297,130 @@ ft_putendl_fd	: 1.OK
 ft_putnbr_fd	: 1.OK 2.OK 3.OK 4.OK 5.OK
 ft_striteri	: 1.OK 2.OK 3.OK
 ```
+
+
+```
+lyao-che@u80z03s02 libft-unit-test % make
+ make -j 3 -C ../libft
+gcc  -c ft_isalpha.c -o ft_isalpha.o
+gcc  -c ft_isdigit.c -o ft_isdigit.o
+gcc  -c ft_isalnum.c -o ft_isalnum.o
+gcc  -c ft_isascii.c -o ft_isascii.o
+gcc  -c ft_isprint.c -o ft_isprint.o
+gcc  -c ft_strlen.c -o ft_strlen.o
+gcc  -c ft_memset.c -o ft_memset.o
+gcc  -c ft_bzero.c -o ft_bzero.o
+gcc  -c ft_memcpy.c -o ft_memcpy.o
+gcc  -c ft_memmove.c -o ft_memmove.o
+gcc  -c ft_strlcpy.c -o ft_strlcpy.o
+gcc  -c ft_strlcat.c -o ft_strlcat.o
+gcc  -c ft_toupper.c -o ft_toupper.o
+gcc  -c ft_tolower.c -o ft_tolower.o
+gcc  -c ft_strchr.c -o ft_strchr.o
+gcc  -c ft_strrchr.c -o ft_strrchr.o
+gcc  -c ft_strncmp.c -o ft_strncmp.o
+gcc  -c ft_memchr.c -o ft_memchr.o
+gcc  -c ft_memcmp.c -o ft_memcmp.o
+gcc  -c ft_strnstr.c -o ft_strnstr.o
+gcc  -c ft_atoi.c -o ft_atoi.o
+gcc  -c ft_calloc.c -o ft_calloc.o
+gcc  -c ft_strdup.c -o ft_strdup.o
+gcc  -c ft_substr.c -o ft_substr.o
+gcc  -c ft_strjoin.c -o ft_strjoin.o
+gcc  -c ft_strtrim.c -o ft_strtrim.o
+gcc  -c ft_split.c -o ft_split.o
+gcc  -c ft_itoa.c -o ft_itoa.o
+gcc  -c ft_strmapi.c -o ft_strmapi.o
+gcc  -c ft_striteri.c -o ft_striteri.o
+gcc  -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc  -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc  -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc  -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar crs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+ make bonus -j 3 -C ../libft
+make[1]: *** No rule to make target `bonus'.  Stop.
+ cp ../libft/libft.a assets/
+➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so
+lyao-che@u80z03s02 libft-unit-test % make f
+ make -j 3 -C ../libft
+make[1]: Nothing to be done for `all'.
+ make bonus -j 3 -C ../libft
+make[1]: *** No rule to make target `bonus'.  Stop.
+ cp ../libft/libft.a assets/
+➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so
+[  Linking #0  ]
+➤  clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o
+RUNNING TESTS:
+                      First part
+.-"-.     .-"-.     .-"-.     .-"-.     .-"-.     .-"-.
+     "-.-"     "-.-"     "-.-"     "-.-"     "-.-"
+ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_bzero:      [OK] [OK] [OK] [OK]
+ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_memccpy:    [MISSING]
+ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_memchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_memcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_isalpha:    [OK]
+ft_isdigit:    [OK]
+ft_isalnum:    [OK]
+ft_isascii:    [OK]
+ft_isprint:    [OK]
+ft_toupper:    [OK]
+ft_tolower:    [OK]
+ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strrchr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strncmp:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strlcpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strlcat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH]
+[no crash]: your strnstr does not segfault when null parameter is sent
+
+ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] [OK] [OK] [OK]
+[KO]: your atoi does not work with over long max value
+[KO]: your atoi does not work with over long min value
+
+ft_calloc:     [OK] [OK] [OK] [OK] [OK]
+ft_strdup:     [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+
+In this part, you can choose to protect your function or not to,
+a color code will tell you if your function is protected/not BUT stay coherent !
+[🛡 ] --> protected
+[💥 ] --> not protected
+                     Second part
+ __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)
+(______)(______)(______)(______)(______)(______)(______)(___
+
+ft_substr:     [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [💥 ] [OK]
+[fail]: your substr did not allocate the good size so the \0 test may be false
+
+ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_strtrim:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
+ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_itoa:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_strmapi:    [OK] [OK] [OK] [OK] [OK] [💥 ]
+ft_putchar_fd: [OK] [OK]
+ft_putstr_fd:  [OK] [OK] [💥 ]
+ft_putendl_fd: [OK] [OK] [💥 ]
+ft_putnbr_fd:  [OK] [OK] [OK] [OK] [OK]
+
+ /~~~\/~~\/~~~\/~~~\/~~\/~~~\                    /~~~\/~~\/~~~\/~~~\/~~\/~~~\
+ | /\/ /\/ /\ || /\/ /\/ /\ |                    | /\ \/\ \/\ || /\ \/\ \/\ |
+  \ \/ /\/ /\/ /\ \/ /\/ /\/ /     Bonus part     \ \/\ \/\ \/ /\ \/\ \/\ \/ /
+   \ \/\ \/\ \/  \ \/\ \/\ \/                      \/ /\/ /\/ /  \/ /\/ /\/ /
+,_/\ \/\ \/\ \__/\ \/\ \/\ \______________________/ /\/ /\/ /\__/ /\/ /\/ /\_,
+(__/\__/\__/\____/\__/\__/\________________________/\__/\__/\____/\__/\__/\__)
+
+ft_lstnew:     [MISSING]
+ft_lstadd_front: [MISSING]
+ft_lstsize:    [MISSING]
+ft_lstlast:    [MISSING]
+ft_lstadd_back:[MISSING]
+ft_lstdelone:  [MISSING]
+ft_lstclear:   [MISSING]
+ft_lstiter:    [MISSING]
+ft_lstmap:     [MISSING]
+ft_striteri:   [OK] [OK] [🛡 ]
+See result.log for more informations !
+```
