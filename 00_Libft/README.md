@@ -551,4 +551,4 @@ See result.log for more informations !
 1. tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.
 2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
 3. Otherwise, it returns 0.
-4. >=0 && <= 127
+4. x >=0 && x <= 127
