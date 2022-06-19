@@ -528,3 +528,27 @@ ft_lstmap:     [MISSING]
 ft_striteri:   [OK] [OK] [🛡 ] 
 See result.log for more informations !
 ```
+
+
+## .c files explanation
+
+### 1. Required
+
+#### 1.1. [ft_isalpha.c](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)
+
+1.  checks whether a character is an alphabet or not.
+2.  If a character passed to isalpha() is an alphabet, it returns a non-zero integer, if not it returns 0.
+
+#### 1.2. [ft_isdigit.c](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)
+
+1. checks whether a character is numeric character (0-9) or not.
+2. takes a single argument in the form of an integer and returns the value of type int
+3. Non-zero integer ( x > 0 ): Argument is a numeric character.
+4. Zero (0): Argument is not a numeric character.
+
+#### 1.3. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
+
+1. tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.
+2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
+3. Otherwise, it returns 0.
+4. >=0 && <= 127
