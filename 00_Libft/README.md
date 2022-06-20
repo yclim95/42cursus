@@ -300,8 +300,8 @@ ft_striteri	: 1.OK 2.OK 3.OK
 
 
 ```
-lyao-che@u80z03s02 libft-unit-test % make
- make -j 3 -C ../libft
+Lims-iMac:libft-unit-test YCLim$ make
+ make -j 3 -C ../libft 
 gcc  -c ft_isalpha.c -o ft_isalpha.o
 gcc  -c ft_isdigit.c -o ft_isdigit.o
 gcc  -c ft_isalnum.c -o ft_isalnum.o
@@ -339,50 +339,156 @@ gcc  -c ft_putnbr_fd.c -o ft_putnbr_fd.o
 ar crs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
  make bonus -j 3 -C ../libft
 make[1]: *** No rule to make target `bonus'.  Stop.
- cp ../libft/libft.a assets/
-➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so
-lyao-che@u80z03s02 libft-unit-test % make f
- make -j 3 -C ../libft
+ cp ../libft/libft.a assets/ 
+➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/main.o -c src/main.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/test_functions.o -c src/test_functions.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/display_test_result.o -c src/display_test_result.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/signal.o -c src/signal.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/sandbox.o -c src/sandbox.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/bench_functions.o -c src/bench_functions.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/additional_functions.o -c src/additional_functions.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/hardcore-main.o -c hardcore-mode/hardcore-main.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/error.o -c hardcore-mode/error.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/ncurses-display.o -c hardcore-mode/ncurses-display.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-init.o -c hardcore-mode/test-init.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-utils.o -c hardcore-mode/test-utils.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcpy.o -c hardcore-mode/test-strcpy.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcmp.o -c hardcore-mode/test-strcmp.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncmp.o -c hardcore-mode/test-strncmp.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memset.o -c hardcore-mode/test-memset.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcpy.o -c hardcore-mode/test-memcpy.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memccpy.o -c hardcore-mode/test-memccpy.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memmove.o -c hardcore-mode/test-memmove.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memchr.o -c hardcore-mode/test-memchr.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcmp.o -c hardcore-mode/test-memcmp.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strlen.o -c hardcore-mode/test-strlen.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncpy.o -c hardcore-mode/test-strncpy.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcat.o -c hardcore-mode/test-strcat.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncat.o -c hardcore-mode/test-strncat.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strchr.o -c hardcore-mode/test-strchr.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strrchr.o -c hardcore-mode/test-strrchr.c 
+[  Building #0  ]
+➤  clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strstr.o -c hardcore-mode/test-strstr.c 
+[  Linking #0  ]
+➤  clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o
+ clang -Werror -Wall -Wextra -dynamiclib assets/malloc.c -I ./include -o assets/malloc.dylib 
+ clang -Werror -Wall -Wextra assets/wrapper.c -I ./include -o run_test 
+Lims-iMac:libft-unit-test YCLim$ make -f
+/Library/Developer/CommandLineTools/usr/bin/make: option requires an argument -- f
+Usage: make [options] [target] ...
+Options:
+  -b, -m                      Ignored for compatibility.
+  -B, --always-make           Unconditionally make all targets.
+  -C DIRECTORY, --directory=DIRECTORY
+                              Change to DIRECTORY before doing anything.
+  -d                          Print lots of debugging information.
+  --debug[=FLAGS]             Print various types of debugging information.
+  -e, --environment-overrides
+                              Environment variables override makefiles.
+  -f FILE, --file=FILE, --makefile=FILE
+                              Read FILE as a makefile.
+  -h, --help                  Print this message and exit.
+  -i, --ignore-errors         Ignore errors from commands.
+  -I DIRECTORY, --include-dir=DIRECTORY
+                              Search DIRECTORY for included makefiles.
+  -j [N], --jobs[=N]          Allow N jobs at once; infinite jobs with no arg.
+  -k, --keep-going            Keep going when some targets can't be made.
+  -l [N], --load-average[=N], --max-load[=N]
+                              Don't start multiple jobs unless load is below N.
+  -L, --check-symlink-times   Use the latest mtime between symlinks and target.
+  -n, --just-print, --dry-run, --recon
+                              Don't actually run any commands; just print them.
+  -o FILE, --old-file=FILE, --assume-old=FILE
+                              Consider FILE to be very old and don't remake it.
+  -p, --print-data-base       Print make's internal database.
+  -q, --question              Run no commands; exit status says if up to date.
+  -r, --no-builtin-rules      Disable the built-in implicit rules.
+  -R, --no-builtin-variables  Disable the built-in variable settings.
+  -s, --silent, --quiet       Don't echo commands.
+  -S, --no-keep-going, --stop
+                              Turns off -k.
+  -t, --touch                 Touch targets instead of remaking them.
+  -v, --version               Print the version number of make and exit.
+  -w, --print-directory       Print the current directory.
+  --no-print-directory        Turn off -w, even if it was turned on implicitly.
+  -W FILE, --what-if=FILE, --new-file=FILE, --assume-new=FILE
+                              Consider FILE to be infinitely new.
+  --warn-undefined-variables  Warn when an undefined variable is referenced.
+  -N OPTION, --NeXT-option=OPTION
+                              Turn on value of NeXT OPTION.
+
+This program built for i386-apple-darwin11.3.0
+Report bugs to <bug-make@gnu.org>
+Lims-iMac:libft-unit-test YCLim$ make f
+ make -j 3 -C ../libft 
 make[1]: Nothing to be done for `all'.
  make bonus -j 3 -C ../libft
 make[1]: *** No rule to make target `bonus'.  Stop.
- cp ../libft/libft.a assets/
-➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so
+ cp ../libft/libft.a assets/ 
+➤  clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_striteri.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so 
 [  Linking #0  ]
 ➤  clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o
 RUNNING TESTS:
                       First part
 .-"-.     .-"-.     .-"-.     .-"-.     .-"-.     .-"-.
-     "-.-"     "-.-"     "-.-"     "-.-"     "-.-"
-ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_bzero:      [OK] [OK] [OK] [OK]
-ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+     "-.-"     "-.-"     "-.-"     "-.-"     "-.-"    
+ft_memset:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_bzero:      [OK] [OK] [OK] [OK] 
+ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memccpy:    [MISSING]
-ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_memchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_memcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_isalpha:    [OK]
-ft_isdigit:    [OK]
-ft_isalnum:    [OK]
-ft_isascii:    [OK]
-ft_isprint:    [OK]
-ft_toupper:    [OK]
-ft_tolower:    [OK]
-ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strrchr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strncmp:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strlcpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strlcat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH]
+ft_memmove:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memcmp:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlen:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_isalpha:    [OK] 
+ft_isdigit:    [OK] 
+ft_isalnum:    [OK] 
+ft_isascii:    [OK] 
+ft_isprint:    [OK] 
+ft_toupper:    [OK] 
+ft_tolower:    [OK] 
+ft_strchr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strrchr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncmp:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcpy:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcat:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
 [no crash]: your strnstr does not segfault when null parameter is sent
 
-ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] [OK] [OK] [OK]
+ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK] [OK] [OK] [OK] 
 [KO]: your atoi does not work with over long max value
 [KO]: your atoi does not work with over long min value
 
-ft_calloc:     [OK] [OK] [OK] [OK] [OK]
-ft_strdup:     [OK] [OK] [OK] [OK] [OK] [OK] [OK]
+ft_calloc:     [OK] [OK] [OK] [OK] [OK] 
+ft_strdup:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 
 In this part, you can choose to protect your function or not to,
 a color code will tell you if your function is protected/not BUT stay coherent !
@@ -392,16 +498,16 @@ a color code will tell you if your function is protected/not BUT stay coherent !
  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)(__  __)
 (______)(______)(______)(______)(______)(______)(______)(___
 
-ft_substr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] [OK]
-ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [🛡 ]
-ft_strtrim:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
-ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ]
-ft_itoa:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-ft_strmapi:    [OK] [OK] [OK] [OK] [OK] [🛡 ]
-ft_putchar_fd: [OK] [OK]
-ft_putstr_fd:  [OK] [OK] [🛡 ]
-ft_putendl_fd: [OK] [OK] [🛡 ]
-ft_putnbr_fd:  [OK] [OK] [OK] [OK] [OK]
+ft_substr:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] [OK] 
+ft_strjoin:    [OK] [OK] [OK] [OK] [OK] [🛡 ] 
+ft_strtrim:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] 
+ft_split:      [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [🛡 ] 
+ft_itoa:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strmapi:    [OK] [OK] [OK] [OK] [OK] [🛡 ] 
+ft_putchar_fd: [OK] [OK] 
+ft_putstr_fd:  [OK] [OK] [🛡 ] 
+ft_putendl_fd: [OK] [OK] [🛡 ] 
+ft_putnbr_fd:  [OK] [OK] [OK] [OK] [OK] 
 
  /~~~\/~~\/~~~\/~~~\/~~\/~~~\                    /~~~\/~~\/~~~\/~~~\/~~\/~~~\
  | /\/ /\/ /\ || /\/ /\/ /\ |                    | /\ \/\ \/\ || /\ \/\ \/\ |
@@ -419,6 +525,30 @@ ft_lstdelone:  [MISSING]
 ft_lstclear:   [MISSING]
 ft_lstiter:    [MISSING]
 ft_lstmap:     [MISSING]
-ft_striteri:   [OK] [OK] [🛡 ]
+ft_striteri:   [OK] [OK] [🛡 ] 
 See result.log for more informations !
 ```
+
+
+## .c files explanation
+
+### 1. Required
+
+#### 1.1. [ft_isalpha.c](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)
+
+1.  checks whether a character is an alphabet or not.
+2.  If a character passed to isalpha() is an alphabet, it returns a non-zero integer, if not it returns 0.
+
+#### 1.2. [ft_isdigit.c](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)
+
+1. checks whether a character is numeric character (0-9) or not.
+2. takes a single argument in the form of an integer and returns the value of type int
+3. Non-zero integer ( x > 0 ): Argument is a numeric character.
+4. Zero (0): Argument is not a numeric character.
+
+#### 1.3. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
+
+1. tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.
+2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
+3. Otherwise, it returns 0.
+4. x >=0 && x <= 127
