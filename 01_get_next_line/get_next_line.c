@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 11:02:25 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/22 11:35:45 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -98,7 +98,7 @@ char	*get_next_line(int fd)
 	records = ft_read_save(fd, records);
 	if (!records)
 		return (NULL);
-	lines = ft_get_line(records);
+	lines = ft_getline(records);
 	records  = ft_save(records);
 	return (lines);
 }
