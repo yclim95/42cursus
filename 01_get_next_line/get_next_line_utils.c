@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 08:38:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/21 07:31:11 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/22 11:03:38 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,6 @@ char	*ft_strjoin(char *s1, char *s2)
 		s[c1++] = s2[c2++];
 	s[ft_strlen(s1) + ft_strlen(s2)] = '\0';
 	free(s1);
-	return (str);
+	return (s);
 
 }
