@@ -6,9 +6,11 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 10:51:11 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/22 11:02:25 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "get_next_line.h"
+
 char	*ft_read_save(int fd, char *save)
 {
 	char	*lines;
@@ -17,6 +19,7 @@ char	*ft_read_save(int fd, char *save)
 	lines = malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!lines)
 		return (NULL);
+	bytes = 1;
 	while (bytes != 0 && !ft_strchr(save, '\n'))
 	{
 		bytes = read(fd, lines, BUFFER_SIZE);
@@ -76,7 +79,7 @@ char	*ft_getline(char *save)
 		lines[c] = save[c];
 		c++;
 	}
-	if (save[c] = '\n')
+	if (save[c] == '\n')
 	{
 		lines[c] = save[c];
 		c++;
@@ -93,7 +96,7 @@ char	*get_next_line(int fd)
 	if (BUFFER_SIZE <= 0 || fd < 0)
 		return (0);
 	records = ft_read_save(fd, records);
-	if (!save)
+	if (!records)
 		return (NULL);
 	lines = ft_get_line(records);
 	records  = ft_save(records);
