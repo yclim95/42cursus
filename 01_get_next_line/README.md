@@ -37,3 +37,7 @@ int main(void)
 	return (0);
 }
 ```
+
+### [What is gcc -D?](https://www.rapidtables.com/code/linux/gcc/gcc-d.html)
+
+**gcc -D** option flag:defines a macro to be used by the preprocessor. 
