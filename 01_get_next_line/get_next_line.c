@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 10:35:15 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/06/22 10:51:11 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 char	*ft_read_save(int fd, char *save)
@@ -59,6 +59,30 @@ char	*ft_save(char *save)
 
 char	*ft_getline(char *save)
 {
+	char	*lines;
+	int	c;
+
+	c = 0;
+	if (!save[c])
+		return (NULL);
+	while (save[c] != '\n' && save[c])
+		c++;
+	lines = malloc(sizeof(char) * (c + 2));
+	if (!lines)
+		return (NULL);
+	c = 0;
+	while (save[c] != '\n' && save[c])
+	{
+		lines[c] = save[c];
+		c++;
+	}
+	if (save[c] = '\n')
+	{
+		lines[c] = save[c];
+		c++;
+	}
+	lines[c] = '\0';
+	return (lines);
 }
 
 char	*get_next_line(int fd)
