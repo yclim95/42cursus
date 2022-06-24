@@ -550,8 +550,8 @@ See result.log for more informations !
 
 1. The isalnum() function checks whether the argument passed is an alphanumeric character (alphabet or number) or not.
 2. It is defined in the ```ctype.h``` header file.
-3. Returns *1* if argument is an alphanumeric character.
-4. Returns *0* if argument is neither an alphabet nor a digit.
+3. Returns **1** if argument is an alphanumeric character.
+4. Returns **0** if argument is neither an alphabet nor a digit.
 
 
 #### 1.4. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
@@ -560,3 +560,11 @@ See result.log for more informations !
 2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
 3. Otherwise, it returns 0.
 4. x >=0 && x <= 127
+
+
+#### 1.5. [ft_isprint](https://www.programiz.com/c-programming/library-function/ctype.h/isprint)
+
+1. The isprint() function checks whether a character is a printable character or not.
+2. Those characters that occupies printing space are known as printable characters.
+3. If a character passed to isprint() is a printable character, it returns non-zero integer, if not it returns 0.
+4. It is defined in <ctype.h> header file.
