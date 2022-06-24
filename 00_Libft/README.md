@@ -575,3 +575,15 @@ See result.log for more informations !
 2. The strlen() function takes a string as an argument and returns its length. The returned value is of type ```size_t``` (an unsigned integer type).
 3. It is defined in the <string.h> header file.
 4. **Note** that the strlen() function doesn't count the null character ```\0``` while calculating the length.
+
+
+#### 1.7. [ft_memset](https://www.geeksforgeeks.org/memset-c-example/)
+
+memset() is used to fill a block of memory with a particular value.
+
+1. **ptr** ==> Starting address of memory to be filled
+2. **x**   ==> Value to be filled
+3. **n**   ==> Number of bytes to be filled starting (from ptr to be filled)
+4. memset() is used to fill a block of memory with a particular value.
+5. **Note** that ptr is a void pointer, so that we can pass any type of pointer to this function.
+6. The memset function returns ptr with the set value to x
