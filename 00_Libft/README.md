@@ -568,3 +568,10 @@ See result.log for more informations !
 2. Those characters that occupies printing space are known as printable characters.
 3. If a character passed to isprint() is a printable character, it returns non-zero integer, if not it returns 0.
 4. It is defined in <ctype.h> header file.
+
+#### 1.6. [ft_strlen](https://www.programiz.com/c-programming/library-function/string.h/strlen)
+
+1. The strlen() function calculates the length of a given string.
+2. The strlen() function takes a string as an argument and returns its length. The returned value is of type ```size_t``` (an unsigned integer type).
+3. It is defined in the <string.h> header file.
+4. **Note** that the strlen() function doesn't count the null character ```\0``` while calculating the length.
