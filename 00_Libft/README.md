@@ -546,7 +546,15 @@ See result.log for more informations !
 3. Non-zero integer ( x > 0 ): Argument is a numeric character.
 4. Zero (0): Argument is not a numeric character.
 
-#### 1.3. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
+#### 1.3. [ft_isalnum](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)
+
+1. The isalnum() function checks whether the argument passed is an alphanumeric character (alphabet or number) or not.
+2. It is defined in the ```ctype.h``` header file.
+3. Returns *1* if argument is an alphanumeric character.
+4. Returns *0* if argument is neither an alphabet nor a digit.
+
+
+#### 1.4. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
 
 1. tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.
 2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
