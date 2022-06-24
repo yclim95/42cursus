@@ -587,3 +587,11 @@ memset() is used to fill a block of memory with a particular value.
 4. memset() is used to fill a block of memory with a particular value.
 5. **Note** that ptr is a void pointer, so that we can pass any type of pointer to this function.
 6. The memset function returns ptr with the set value to x
+
+
+#### 1.8. [ft_bzero](https://man7.org/linux/man-pages/man3/bzero.3.html)
+
+1. #include <strings.h>
+2. void bzero(void *s, size_t n);
+3. The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.
+4. Return none
