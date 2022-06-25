@@ -629,26 +629,26 @@ memset() is used to fill a block of memory with a particular value.
 #### 1.11. [ft_strlcpy]()
 
 
-ft_strlcat
-ft_toupper
-ft_tolower
-ft_strchr
-ft_strrchr
-ft_strncmp
-ft_memchr
-ft_memcmp
-ft_strnstr
-ft_atoi
-ft_calloc
-ft_strdup
-ft_substr
-ft_strjoin
-ft_strtrim
-ft_split
-ft_itoa
-ft_strmapi
-ft_striteri
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
+#### 1.12. [ft_strlcat](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strlcat.c)
+#### 1.13. [ft_toupper]()
+#### 1.14. [ft_tolower]()
+#### 1.15. [ft_strchr]()
+#### 1.16. [ft_strrchr]()
+#### 1.17. [ft_strncmp]()
+#### 1.18. [ft_memchr]()
+#### 1.19. [ft_memcmp]()
+#### 1.20. [ft_strnstr]()
+#### 1.21. [ft_atoi]()
+#### 1.22. [ft_calloc]()
+#### 1.23. [ft_strdup]()
+#### 1.24. [ft_substr]()
+#### 1.25. [ft_strjoin]()
+#### 1.26. [ft_strtrim]()
+#### 1.27. [ft_split]()
+#### 1.28. [ft_itoa]()
+#### 1.29. [ft_strmapi]()
+#### 1.30. [ft_striteri]()
+#### 1.31. [ft_putchar_fd]()
+#### 1.32. [ft_putstr_fd]()
+#### 1.33. [ft_putendl_fd]()
+#### 1.34. [ft_putnbr_fd]()
