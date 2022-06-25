@@ -534,50 +534,56 @@ See result.log for more informations !
 
 ### 1. Required
 
-#### 1.1. [ft_isalpha.c](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)
+#### 1.1. [ft_isalpha.c](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_isalpha.c)
 
 1.  checks whether a character is an alphabet or not.
 2.  If a character passed to isalpha() is an alphabet, it returns a non-zero integer, if not it returns 0.
+3.  [isalpha](https://www.programiz.com/c-programming/library-function/ctype.h/isalpha)
 
-#### 1.2. [ft_isdigit.c](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)
+#### 1.2. [ft_isdigit.c](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_isdigit.c)
 
 1. checks whether a character is numeric character (0-9) or not.
 2. takes a single argument in the form of an integer and returns the value of type int
 3. Non-zero integer ( x > 0 ): Argument is a numeric character.
 4. Zero (0): Argument is not a numeric character.
+5. [isdigit](https://www.programiz.com/c-programming/library-function/ctype.h/isdigit)
 
-#### 1.3. [ft_isalnum](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)
+#### 1.3. [ft_isalnum](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_isalnum.c)
 
 1. The isalnum() function checks whether the argument passed is an alphanumeric character (alphabet or number) or not.
 2. It is defined in the ```ctype.h``` header file.
 3. Returns **1** if argument is an alphanumeric character.
 4. Returns **0** if argument is neither an alphabet nor a digit.
+5. [isalnum](https://www.programiz.com/c-programming/library-function/ctype.h/isalnum)
 
 
-#### 1.4. [ft_isascii.c](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
+#### 1.4. [ft_isascii.c](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_isascii.c)
 
 1. tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.
 2. returns nonzero if c, in the current locale, can be represented as a character in the 7–bit US-ASCII character set.
 3. Otherwise, it returns 0.
 4. x >=0 && x <= 127
+5. [isascii](https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value)
 
 
-#### 1.5. [ft_isprint](https://www.programiz.com/c-programming/library-function/ctype.h/isprint)
+#### 1.5. [ft_isprint](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_isprint.c)
 
 1. The isprint() function checks whether a character is a printable character or not.
 2. Those characters that occupies printing space are known as printable characters.
 3. If a character passed to isprint() is a printable character, it returns non-zero integer, if not it returns 0.
-4. It is defined in <ctype.h> header file.
+5. It is defined in <ctype.h> header file.
+6. [isprint](https://www.programiz.com/c-programming/library-function/ctype.h/isprint)
 
-#### 1.6. [ft_strlen](https://www.programiz.com/c-programming/library-function/string.h/strlen)
+#### 1.6. [ft_strlen](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strlen.c)
 
 1. The strlen() function calculates the length of a given string.
 2. The strlen() function takes a string as an argument and returns its length. The returned value is of type ```size_t``` (an unsigned integer type).
 3. It is defined in the <string.h> header file.
 4. **Note** that the strlen() function doesn't count the null character ```\0``` while calculating the length.
+5. [strlen](https://www.programiz.com/c-programming/library-function/string.h/strlen)
 
 
-#### 1.7. [ft_memset](https://www.geeksforgeeks.org/memset-c-example/)
+#### 1.7. [ft_memset](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memset.c)
 
 memset() is used to fill a block of memory with a particular value.
 
@@ -587,11 +593,13 @@ memset() is used to fill a block of memory with a particular value.
 4. memset() is used to fill a block of memory with a particular value.
 5. **Note** that ptr is a void pointer, so that we can pass any type of pointer to this function.
 6. The memset function returns ptr with the set value to x
+7. [memset](https://www.geeksforgeeks.org/memset-c-example/)
 
 
-#### 1.8. [ft_bzero](https://man7.org/linux/man-pages/man3/bzero.3.html)
+#### 1.8. [ft_bzero](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_bzero.c)
 
 1. #include <strings.h>
 2. void bzero(void *s, size_t n);
 3. The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.
 4. Return none
+5. [bzero](https://man7.org/linux/man-pages/man3/bzero.3.html)
