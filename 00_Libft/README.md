@@ -603,3 +603,12 @@ memset() is used to fill a block of memory with a particular value.
 3. The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.
 4. Return none
 5. [bzero](https://man7.org/linux/man-pages/man3/bzero.3.html)
+
+
+#### 1.9. [ft_memcpy](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memcpy.c)
+
+1. It is declared in string.h
+2. memcpy() is used to copy a block of memory from a location to another.
+3. **Notes:**
+ 1. memcpy() doesn’t CHECK for overflow or \0 
+ 2. memcpy() leads to PROBLEMS when source & destination addresses OVERLAP. 
