@@ -624,3 +624,31 @@ memset() is used to fill a block of memory with a particular value.
    1. **memcpy()** simply copies data one by one from one location to another. On the other hand **memmove()** copies the data first to an intermediate buffer, then from the buffer to destination.
    2. **memcpy()** leads to problems when strings overlap. 
 5. [memmove](https://www.geeksforgeeks.org/memmove-in-cc/)
+
+
+#### 1.11. [ft_strlcpy]()
+
+
+ft_strlcat
+ft_toupper
+ft_tolower
+ft_strchr
+ft_strrchr
+ft_strncmp
+ft_memchr
+ft_memcmp
+ft_strnstr
+ft_atoi
+ft_calloc
+ft_strdup
+ft_substr
+ft_strjoin
+ft_strtrim
+ft_split
+ft_itoa
+ft_strmapi
+ft_striteri
+ft_putchar_fd
+ft_putstr_fd
+ft_putendl_fd
+ft_putnbr_fd
