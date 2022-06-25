@@ -612,3 +612,4 @@ memset() is used to fill a block of memory with a particular value.
 3. **Notes:**
    1. memcpy() doesn’t CHECK for overflow or \0 
    2. memcpy() leads to PROBLEMS when source & destination addresses OVERLAP. 
+4. [memcpy](https://www.geeksforgeeks.org/memcpy-in-cc/)
