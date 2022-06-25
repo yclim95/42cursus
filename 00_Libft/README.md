@@ -613,3 +613,14 @@ memset() is used to fill a block of memory with a particular value.
    1. memcpy() doesn’t CHECK for overflow or \0 
    2. memcpy() leads to PROBLEMS when source & destination addresses OVERLAP. 
 4. [memcpy](https://www.geeksforgeeks.org/memcpy-in-cc/)
+
+
+#### 1.10. [ft_memmove](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memmove.c)
+
+1. It is declared in string.h
+2. void * memmove(void *to, const void *from, size_t numBytes);
+3. memmove() is used to copy a block of memory from a location to another.
+4. How is it different from memcpy()? 
+   1. **memcpy()** simply copies data one by one from one location to another. On the other hand **memmove()** copies the data first to an intermediate buffer, then from the buffer to destination.
+   2. **memcpy()** leads to problems when strings overlap. 
+5. [memmove](https://www.geeksforgeeks.org/memmove-in-cc/)
