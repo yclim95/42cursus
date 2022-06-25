@@ -610,5 +610,5 @@ memset() is used to fill a block of memory with a particular value.
 1. It is declared in string.h
 2. memcpy() is used to copy a block of memory from a location to another.
 3. **Notes:**
- 1. memcpy() doesn’t CHECK for overflow or \0 
- 2. memcpy() leads to PROBLEMS when source & destination addresses OVERLAP. 
+...1. memcpy() doesn’t CHECK for overflow or \0 
+...2. memcpy() leads to PROBLEMS when source & destination addresses OVERLAP. 
