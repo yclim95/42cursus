@@ -626,10 +626,34 @@ memset() is used to fill a block of memory with a particular value.
 5. [memmove](https://www.geeksforgeeks.org/memmove-in-cc/)
 
 
-#### 1.11. [ft_strlcpy]()
+#### 1.11. [ft_strlcpy](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strlcpy.c)
+
+1. #include <string.h>
+2. size_t strlcpy( char *dst, const char *src, size_t size );
+
+3. The **strlcpy()** and **strlcat()** functions copy and concatenate strings respectively
+4. They're designed to be safer, more consistent, and less error-prone replacements for strncpy() and strncat().
+5. *Unlike those functions*, **strlcpy()** and **strlcat()**
+   1. take the full size of the buffer (not just the length) &
+   2. Guarantee to NUL-terminate the result (as long as size is larger than 0 or, in the case of strlcat(), as long as there's at least one byte free in dst).
+6. The **strlcpy()** function copies up to size − 1 characters from the NUL-terminated string src to dst, NUL-terminating the result.
+7. Return: total length of src.
+8. [strlcat, strlcpy](https://www.qnx.com/developers/docs/7.1/index.html#com.qnx.doc.neutrino.lib_ref/topic/s/strlcat.html)
 
 
 #### 1.12. [ft_strlcat](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strlcat.c)
+
+1. #include <string.h>
+2. size_t strlcat( char *dst, const char *src, size_t size );
+3. The **strlcpy()** and **strlcat()** functions copy and concatenate strings respectively
+4. They're designed to be safer, more consistent, and less error-prone replacements for strncpy() and strncat().
+5. *Unlike those functions*, **strlcpy()** and **strlcat()**
+   1. take the full size of the buffer (not just the length) &
+   2. Guarantee to NUL-terminate the result (as long as size is larger than 0 or, in the case of strlcat(), as long as there's at least one byte free in dst).
+6. The **strlcat()** function appends the NUL-terminated string src to the end of dst. It will append at most size − strlen(dst) − 1 bytes, NUL-terminating the result.
+7. Return: (initial length of dst + length of src)
+8. [strlcat, strlcpy](https://www.qnx.com/developers/docs/7.1/index.html#com.qnx.doc.neutrino.lib_ref/topic/s/strlcat.html)
+
 #### 1.13. [ft_toupper](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_toupper.c)
 #### 1.14. [ft_tolower](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_tolower.c)
 #### 1.15. [ft_strchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strchr.c)
