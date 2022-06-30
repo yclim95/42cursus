@@ -665,14 +665,193 @@ memset() is used to fill a block of memory with a particular value.
 #### 1.21. [ft_atoi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_atoi.c)
 #### 1.22. [ft_calloc](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_calloc.c)
 #### 1.23. [ft_strdup](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strdup.c)
+
+
+## Additional Parts
+
 #### 1.24. [ft_substr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_substr.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.25. [ft_strjoin](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strjoin.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.26. [ft_strtrim](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strtrim.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.27. [ft_split](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_split.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.28. [ft_itoa](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_itoa.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
+
 #### 1.29. [ft_strmapi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strmapi.c)
+
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.30. [ft_striteri](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_striteri.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.31. [ft_putchar_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putchar_fd.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
 #### 1.32. [ft_putstr_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putstr_fd.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.33. [ft_putendl_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putendl_fd.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
+
+
 #### 1.34. [ft_putnbr_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putnbr_fd.c)
+
+1. char *ft_substr(char const *s, unsigned int start, size_t len);
+2. Parameters
+   1. s:  The string from which to create the substring.
+   2. start:  The start index of the substring in the
+   3. string ’s’.
+   4. len:  The maximum length of the substring.
+3. Return value
+   1. The substring.
+   2. NULL if the allocation fails.
+4. External functs. : malloc
+5. Description
+   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
+   2. The substring begins at index ’start’ and is of maximum size ’len’.
