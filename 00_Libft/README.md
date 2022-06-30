@@ -688,53 +688,46 @@ memset() is used to fill a block of memory with a particular value.
 
 #### 1.25. [ft_strjoin](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strjoin.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. char *ft_strjoin(char const *s1, char const *s2);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. s1:  The prefix string.
+   2. s2:  The suffix string.
 3. Return value
-   1. The substring.
+   1. The new string.
    2. NULL if the allocation fails.
 4. External functs. : malloc
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
 
 
 #### 1.26. [ft_strtrim](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strtrim.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. char *ft_strtrim(char const *s1, char const *set);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. s1:  The string to be trimmed.
+   2. set:  The reference set of characters to trim.
 3. Return value
-   1. The substring.
+   1. The trimmed string.
    2. NULL if the allocation fails.
 4. External functs. : malloc
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.
 
 
 #### 1.27. [ft_split](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_split.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. ``char **ft_split(char const *s, char c);``
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. s:  The string to be split.
+   2. c:  The delimiter character.
 3. Return value
-   1. The substring.
-   2. NULL if the allocation fails.
-4. External functs. : malloc
+   1. The array of new strings resulting from the split. NULL if the allocation fails.
+4. External functs. :
+   1. malloc
+   2. free
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter.
+   2. The array must end with a NULL pointer.
 
 
 #### 1.28. [ft_itoa](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_itoa.c)
