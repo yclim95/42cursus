@@ -732,55 +732,46 @@ memset() is used to fill a block of memory with a particular value.
 
 #### 1.28. [ft_itoa](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_itoa.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. char *ft_itoa(int n);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. n:  the integer to convert.
 3. Return value
-   1. The substring.
+   1. The string representing the integer.
    2. NULL if the allocation fails.
 4. External functs. : malloc
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Allocates (with malloc(3)) and returns a string representing the integer received as an argument.
+   2. Negative numbers must be handled.
 
 
 
 #### 1.29. [ft_strmapi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strmapi.c)
 
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. s:  The string on which to iterate.
+   2. f:  The function to apply to each character.
 3. Return value
-   1. The substring.
+   1. The string created from the successive applications of ’f’.
    2. NULL if the allocation fails.
 4. External functs. : malloc
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Applies the function ’f’ to each character of the string ’s’, and passing its index as first argument to create a new string (with malloc(3)) resulting from successive applications of ’f’.
 
 
 #### 1.30. [ft_striteri](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_striteri.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. void ft_striteri(char *s, void (*f)(unsigned int, char*));
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
+   1. s:  The string on which to iterate.
+   2. f:  The function to apply to each character.
 3. Return value
    1. The substring.
    2. NULL if the allocation fails.
 4. External functs. : malloc
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Applies the function ’f’ on each character of the string passed as argument, passing its index as first argument.  Each character is passed by address to ’f’ to be modified if necessary.
 
 
 #### 1.31. [ft_putchar_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putchar_fd.c)
