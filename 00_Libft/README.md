@@ -776,66 +776,46 @@ memset() is used to fill a block of memory with a particular value.
 
 #### 1.31. [ft_putchar_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putchar_fd.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. void ft_putchar_fd(char c, int fd);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
-3. Return value
-   1. The substring.
-   2. NULL if the allocation fails.
-4. External functs. : malloc
+   1. c:  The character to output.
+   2. fd:  The file descriptor on which to write.
+3. Return value : None
+4. External functs. : write
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Outputs the character ’c’ to the given file descriptor.
 
 #### 1.32. [ft_putstr_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putstr_fd.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. void ft_putstr_fd(char *s, int fd);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
-3. Return value
-   1. The substring.
-   2. NULL if the allocation fails.
-4. External functs. : malloc
+   1. s:  The string to output.
+   2. fd:  The file descriptor on which to write.
+3. Return value : None
+4. External functs. : write
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Outputs the string ’s’ to the given file descriptor.
 
 
 #### 1.33. [ft_putendl_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putendl_fd.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. void ft_putendl_fd(char *s, int fd);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
-3. Return value
-   1. The substring.
-   2. NULL if the allocation fails.
-4. External functs. : malloc
+   1. s:  The string to output.
+   2. fd:  The file descriptor on which to write.
+3. Return value : None
+4. External functs. : write
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Outputs the string ’s’ to the given file descriptor followed by a newline.
 
 
 #### 1.34. [ft_putnbr_fd](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_putnbr_fd.c)
 
-1. char *ft_substr(char const *s, unsigned int start, size_t len);
+1. void ft_putnbr_fd(int n, int fd);
 2. Parameters
-   1. s:  The string from which to create the substring.
-   2. start:  The start index of the substring in the
-   3. string ’s’.
-   4. len:  The maximum length of the substring.
-3. Return value
-   1. The substring.
-   2. NULL if the allocation fails.
-4. External functs. : malloc
+   1. n:  The integer to output.
+   2. fd:  The file descriptor on which to write.
+3. Return value : None
+4. External functs. : write
 5. Description
-   1. Allocates (with malloc(3)) and returns a substring from the string ’s’.
-   2. The substring begins at index ’start’ and is of maximum size ’len’.
+   1. Outputs the integer ’n’ to the given file descriptor.
