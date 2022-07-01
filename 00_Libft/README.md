@@ -665,6 +665,12 @@ memset() is used to fill a block of memory with a particular value.
 5. [toupper](https://www.programiz.com/c-programming/library-function/ctype.h/toupper)
 
 #### 1.14. [ft_tolower](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_tolower.c)
+
+1. The ```tolower()``` function takes an uppercase alphabet and convert it to a *lowercase character*.
+2. It is defined in ctype.h header file.
+3. If the arguments passed to the tolower() function is other than an uppercase alphabet, it returns the same character that is passed to the function.
+4. [tolower](https://www.programiz.com/c-programming/library-function/ctype.h/tolower)
+
 #### 1.15. [ft_strchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strchr.c)
 #### 1.16. [ft_strrchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strrchr.c)
 #### 1.17. [ft_strncmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strncmp.c)
