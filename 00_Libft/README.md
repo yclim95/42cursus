@@ -655,6 +655,15 @@ memset() is used to fill a block of memory with a particular value.
 8. [strlcat, strlcpy](https://www.qnx.com/developers/docs/7.1/index.html#com.qnx.doc.neutrino.lib_ref/topic/s/strlcat.html)
 
 #### 1.13. [ft_toupper](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_toupper.c)
+
+1. The ```toupper()``` function converts a lowercase alphabet to an *uppercase* alphabet.
+2. int toupper(int ch);
+3. ch - a character
+4. Return values:
+   1. a lowercase character, the function returns its corresponding uppercase character
+   2. an uppercase character or a non-alphabetic character, the function the character itself
+5. [toupper](https://www.programiz.com/c-programming/library-function/ctype.h/toupper)
+
 #### 1.14. [ft_tolower](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_tolower.c)
 #### 1.15. [ft_strchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strchr.c)
 #### 1.16. [ft_strrchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strrchr.c)
