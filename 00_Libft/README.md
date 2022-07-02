@@ -771,7 +771,19 @@ memset() is used to fill a block of memory with a particular value.
 
 
 #### 1.22. [ft_calloc](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_calloc.c)
+
+1. The name ```"calloc"``` stands for contiguous allocation.
+2. The ```malloc()``` function allocates memory and leaves the memory uninitialized, whereas the ```calloc()``` function allocates memory and **initializes all bits to zero**.
+3. [calloc](https://www.programiz.com/c-programming/c-dynamic-memory-allocation#calloc)
+
+
 #### 1.23. [ft_strdup](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strdup.c)
+
+1. ```char *strdup(const char *s);```
+2. This function returns a pointer to a **null-terminated byte string**, which is a duplicate of the string pointed to by s.
+3. The memory obtained is done dynamically using ```malloc``` and hence it can be freed using ```free()```. 
+4. Return value: returns a pointer to the **duplicated string** s.
+5. [strdup](https://www.geeksforgeeks.org/strdup-strdndup-functions-c/)
 
 
 ## Additional Parts
