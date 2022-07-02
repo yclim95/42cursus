@@ -728,6 +728,26 @@ memset() is used to fill a block of memory with a particular value.
 
 
 #### 1.19. [ft_memcmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memcmp.c)
+
+1. memcmp function returns a negative, zero, or positive integer depending on whether the first n characters of the object pointed to by s1 are less than, equal to, or greater than the first n characters of the object pointed to by s2.
+2. ````int memcmp(const void *s1, const void *s2, size_t n);```
+3. Parameters
+   1. ```s1``` : An array to compare.
+   2. ```s2``` : An array to compare.
+   3. ```n``` : The number of characters to compare.
+4. Return values
+   1. ```0``` : s1 == s2
+   2. ```Negative integer``` :	The stopping character in s1 < the stopping character in s2
+   3. ```Positive integer``` : The stopping character in s1 was > the stopping character in s2
+5. [memcmp](https://www.techonthenet.com/c_language/standard_library_functions/string_h/memcmp.php)
+6. [What is the difference between memcmp, strcmp and strncmp in C?](https://stackoverflow.com/questions/13095513/what-is-the-difference-between-memcmp-strcmp-and-strncmp-in-c)
+   1. ```strcmp``` compares **null-terminated** C strings
+   2. ```strncmp``` compares at most **N characters** of null-terminated C strings
+   3. ```memcmp``` compares **binary byte buffers** of N bytes
+ 
+
+
+
 #### 1.20. [ft_strnstr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strnstr.c)
 #### 1.21. [ft_atoi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_atoi.c)
 #### 1.22. [ft_calloc](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_calloc.c)
