@@ -672,6 +672,14 @@ memset() is used to fill a block of memory with a particular value.
 4. [tolower](https://www.programiz.com/c-programming/library-function/ctype.h/tolower)
 
 #### 1.15. [ft_strchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strchr.c)
+
+1. The C library function ```char *strchr(const char *str, int c)``` searches for the first occurrence of the character ```c``` (an unsigned char) in the string pointed to by the argument ```str```.
+2. Parameters
+   1. ```str``` − This is the C *string* to be scanned.
+   2. ```c``` − This is the *character* to be searched in str.
+3. Return value: This returns a pointer to the **first occurrence** of the character c in the string str, or **NULL** if the character is not found.
+4. [strchr](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm)
+
 #### 1.16. [ft_strrchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strrchr.c)
 #### 1.17. [ft_strncmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strncmp.c)
 #### 1.18. [ft_memchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memchr.c)
