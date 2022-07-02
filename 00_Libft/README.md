@@ -745,10 +745,18 @@ memset() is used to fill a block of memory with a particular value.
    2. ```strncmp``` compares at most **N characters** of null-terminated C strings
    3. ```memcmp``` compares **binary byte buffers** of N bytes
  
-
-
-
+ 
 #### 1.20. [ft_strnstr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strnstr.c)
+
+1. ```char * strnstr(const char	*big, const char *little, size_t len);```
+2. locate a substring in a string
+3.  The ```strnstr()``` function locates the	**first occurrence** of the	null-termi-nated string little in the	string big, where !> len characters are searched.
+4. Characters that appear after a **'\0'**	character are not searched.
+5. Since the strnstr() function is	a FreeBSD specific API,	it should only be used when portability is not a concern.
+6. [strnstr](https://www.freebsd.org/cgi/man.cgi?query=strnstr&sektion=3)
+
+
+
 #### 1.21. [ft_atoi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_atoi.c)
 #### 1.22. [ft_calloc](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_calloc.c)
 #### 1.23. [ft_strdup](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strdup.c)
