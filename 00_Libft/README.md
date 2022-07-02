@@ -723,7 +723,7 @@ memset() is used to fill a block of memory with a particular value.
  4. Return Values
     1. returns a pointer to the **first occurrence** of the character c within the first n characters of the object pointed to by s.
     2. If c isn't found, it returns a **null pointer**.
-
+5. [memchr](https://www.techonthenet.com/c_language/standard_library_functions/string_h/memchr.php)
 
 
 
