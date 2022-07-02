@@ -681,6 +681,21 @@ memset() is used to fill a block of memory with a particular value.
 4. [strchr](https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm)
 
 #### 1.16. [ft_strrchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strrchr.c)
+
+1. The ```strrchr()``` function in C/C++ locates the last occurrence of a character in a string.
+2. It returns a pointer to the last occurrence in the string. The terminating null character is considered part of the C string.
+3. Therefore, it can also be located to retrieve a pointer to the end of a string.
+4. It is defined in cstring header file.
+5. ```char* strrchr( char* str, int ch )```
+6. Parameters
+   1. ```str``` : specifies the pointer to the null terminated string to be searched for.
+   2. ```ch```: specifies the character to be search for.
+7. Return Value:
+   1. returns a pointer to the **last location** of ch in string, if the ch is found.
+   2. If not found, it returns a **null pointer**.
+8. [strrchr](https://www.geeksforgeeks.org/strrchr-function-in-c-c/)
+
+
 #### 1.17. [ft_strncmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strncmp.c)
 #### 1.18. [ft_memchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memchr.c)
 #### 1.19. [ft_memcmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memcmp.c)
