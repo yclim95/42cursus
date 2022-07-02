@@ -713,6 +713,20 @@ memset() is used to fill a block of memory with a particular value.
 
 
 #### 1.18. [ft_memchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memchr.c)
+
+1. ```memchr``` function searches within the first n characters of the object pointed to by s for the character c. It returns a pointer to it.
+2. ```void *memchr(const void *s, int c, size_t n);```
+3. Parameters
+   1. ```s``` : A pointer to a string where the search will be performed.
+   2. ```c``` : The value to be found.
+   3. ```n``` : The number of characters to search within the object pointed to by s.
+ 4. Return Values
+    1. returns a pointer to the **first occurrence** of the character c within the first n characters of the object pointed to by s.
+    2. If c isn't found, it returns a **null pointer**.
+
+
+
+
 #### 1.19. [ft_memcmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memcmp.c)
 #### 1.20. [ft_strnstr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strnstr.c)
 #### 1.21. [ft_atoi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_atoi.c)
