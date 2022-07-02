@@ -758,6 +758,18 @@ memset() is used to fill a block of memory with a particular value.
 
 
 #### 1.21. [ft_atoi](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_atoi.c)
+
+1. ```atoi``` function converts a string to an **integer***
+2. The atoi function **skips**
+   1. all white-space characters at the beginning of the string,
+   2. converts the subsequent characters as part of the number, and then
+   3. stops when it encounters the first character that isn't a number.
+3. ```int atoi(const char *nptr);```
+4. Parameter: ```nptr - A pointer to a string to convert to an integer.```
+5. Return values: returns the integer representation of a string.
+6. [atoi](https://www.techonthenet.com/c_language/standard_library_functions/stdlib_h/atoi.php)
+
+
 #### 1.22. [ft_calloc](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_calloc.c)
 #### 1.23. [ft_strdup](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strdup.c)
 
