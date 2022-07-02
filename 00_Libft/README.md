@@ -697,6 +697,21 @@ memset() is used to fill a block of memory with a particular value.
 
 
 #### 1.17. [ft_strncmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strncmp.c)
+
+1. the ```strncmp``` function returns a negative, zero, or positive integer depending on whether the first n characters of the object pointed to by s1 are less than, equal to, or greater than the first n characters of the object pointed to by s2.
+2. The ```strncmp``` function will stop comparing if a null character is encountered in either s1 or s2.
+3. ```int strncmp(const char *s1, const char *s2, size_t n);```
+4. Parameters
+   1. ```s1``` : An array to compare.
+   2. ```s2``` : An array to compare.
+   3. ```n``` : The number of characters to compare.
+5. Return values:
+   1. 0:	s1 == s2
+   2. ````Negative integer````: The stopping character in s1 was < the stopping character in s2
+   3. ````Positive integer```:	The stopping character in s1 was > the stopping character in s2
+6. [strncmp](https://www.techonthenet.com/c_language/standard_library_functions/string_h/strncmp.php)
+
+
 #### 1.18. [ft_memchr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memchr.c)
 #### 1.19. [ft_memcmp](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_memcmp.c)
 #### 1.20. [ft_strnstr](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strnstr.c)
