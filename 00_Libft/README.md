@@ -572,7 +572,9 @@ See result.log for more informations !
 2. Those characters that occupies printing space are known as printable characters.
 3. If a character passed to isprint() is a printable character, it returns non-zero integer, if not it returns 0.
 5. It is defined in <ctype.h> header file.
-6. [isprint](https://www.programiz.com/c-programming/library-function/ctype.h/isprint)
+6. ```! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ```
+6. c >= 32 && c <= 126
+7. [isprint](https://www.programiz.com/c-programming/library-function/ctype.h/isprint)
 
 #### 1.6. [ft_strlen](https://github.com/yclim95/42cursus/blob/master/00_Libft/ft_strlen.c)
 
