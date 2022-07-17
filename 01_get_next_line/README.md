@@ -41,3 +41,9 @@ int main(void)
 ### [What is gcc -D?](https://www.rapidtables.com/code/linux/gcc/gcc-d.html)
 
 **gcc -D** option flag:defines a macro to be used by the preprocessor. 
+
+
+###  [Static Variables in C](https://www.geeksforgeeks.org/static-variables-in-c/)
+
+1. Static variables have a property of **preserving their value** even after they are out of their scope!
+2. Hence, static variables preserve their previous value in their previous scope and are not initialized again in the new scope.  
