@@ -10,8 +10,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/22 11:10:26 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 11:11:10 by lyao-che         ###   ########.fr       */
+/*   Created: 2022/07/18 07:41:01 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/18 08:14:41 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,22 @@
 #include <fcntl.h>
 #include "get_next_line.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
-	char	*temp;
-	int	fd;
+	char	*line;
+	int		fd;
 
-	fd = open("test.txt", O_RDONLY);
+	(void)argc;
+	fd = open(argv[1], O_RDONLY);
+	line = "";
 
-	while(1)
+	while(line != NULL)
 	{
-		temp = get_next_line(fd);
-		if (!temp)
-		break ;
-		printf("%s", temp);
-		free(temp);
+		line = get_next_line(fd);
+		printf("%s\n", line);
 	}
+
+	fd = close(fd);
 	return (0);
 }
 ```
