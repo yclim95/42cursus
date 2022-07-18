@@ -48,3 +48,16 @@ int main(int argc, char **argv)
 
 1. Static variables have a property of **preserving their value** even after they are out of their scope!
 2. Hence, static variables preserve their previous value in their previous scope and are not initialized again in the new scope.  
+
+
+## Compilation
+
+```
+gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
+```
+
+## something to test
+
+1. Own created files
+2. ```./a.out /dev/random```
+3. ```./a.out /dev/tty```
