@@ -529,6 +529,8 @@ ft_striteri:   [OK] [OK] [🛡 ]
 See result.log for more informations !
 ```
 
+## Result (MOMO)
+![Ok 100% libft](https://i.imgur.com/iHZvqA2.png)
 
 ## .c files explanation
 
