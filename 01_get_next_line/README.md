@@ -144,3 +144,8 @@ files/big_line_no_nl: 1.OK 2.OK
 files/big_line_with_nl: 1.OK 2.OK
 stdin: 1.OK 2.SIGSEGV
 ```
+
+
+## what is SIGSEGV?
+
+A SIGSEGV is an error(signal) caused by an invalid memory reference or a segmentation fault. You are probably trying to access an array element out of bounds or trying to use too much memory.
