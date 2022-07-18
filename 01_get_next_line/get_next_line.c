@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/18 08:28:59 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/18 14:03:02 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -14,7 +14,7 @@
 char	*ft_read_save(int fd, char *save)
 {
 	char	*lines;
-	int	bytes;
+	int		bytes;
 
 	lines = malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!lines)
@@ -38,8 +38,8 @@ char	*ft_read_save(int fd, char *save)
 char	*ft_save(char *save)
 {
 	char	*lines;
-	int	c1;
-	int	c2;
+	int		c1;
+	int		c2;
 
 	c1 = 0;
 	while (save[c1] != '\n' && save[c1])
@@ -64,7 +64,7 @@ char	*ft_save(char *save)
 char	*ft_getline(char *save)
 {
 	char	*lines;
-	int	c;
+	int		c;
 
 	c = 0;
 	if (!save[c])
@@ -100,6 +100,6 @@ char	*get_next_line(int fd)
 	if (!records)
 		return (NULL);
 	lines = ft_getline(records);
-	records  = ft_save(records);
+	records = ft_save(records);
 	return (lines);
 }

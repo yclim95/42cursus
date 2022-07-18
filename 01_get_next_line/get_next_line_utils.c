@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 08:38:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/18 08:46:52 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/18 14:03:33 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ size_t	ft_strlen(char *str)
 
 char	*ft_strchr(char *s, int c)
 {
-	int	i;
-	size_t len;
+	int		i;
+	size_t	len;
 
 	i = 0;
 	if (!s)
