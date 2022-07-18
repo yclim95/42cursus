@@ -64,7 +64,7 @@ gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.
 
 
 ## Testing Resources
-1. []()
+1. [Get Next Line Tester](https://github.com/Tripouille/gnlTester)
 
 ## Testing 
 
