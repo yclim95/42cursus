@@ -61,3 +61,11 @@ gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.
 1. Own created files
 2. ```./a.out /dev/random```
 3. ```./a.out /dev/tty```
+
+
+## Error faced
+
+a.out(70717,0x109420dc0) malloc: Incorrect checksum for freed object 0x7fcde6d041a8: probably modified after being freed.
+Corrupt value: 0x0
+a.out(70717,0x109420dc0) malloc: *** set a breakpoint in malloc_error_break to debug
+zsh: abort      ./a.out get_next_line.c
