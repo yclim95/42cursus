@@ -63,9 +63,84 @@ gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.
 3. ```./a.out /dev/tty```
 
 
-## Error faced
+## Testing Resources
+1. []()
 
-a.out(70717,0x109420dc0) malloc: Incorrect checksum for freed object 0x7fcde6d041a8: probably modified after being freed.
+## Testing 
+
+```
+lyao-che@u90z04s01 gnlTester % make m
+Already up to date.
+[Mandatory]
+[BUFFER_SIZE = 1]:
+Invalid fd: 1.OK 2.OK 3.OK
+files/empty: 1.OK 2.OK
+files/nl: 1.OK 2.OK
+files/41_no_nl: 1.OK 2.OK
+files/41_with_nl: 1.OK 2.OK 3.OK
+files/42_no_nl: 1.OK 2.OK
+files/42_with_nl: 1.OK 2.OK 3.OK
+files/43_no_nl: 1.OK 2.OK
+files/43_with_nl: 1.OK 2.OK 3.OK
+files/multiple_nlx5: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK
+files/multiple_line_no_nl: 1.OK 2.OK 3.OK 4.KO 5.OK 6.OK
+files/multiple_line_with_nl: 1.OK 2.OK 3.OK gnlTest(7717,0x11c5b1dc0) malloc: Incorrect checksum for freed object 0x7fbfefd040a8: probably modified after being freed.
 Corrupt value: 0x0
-a.out(70717,0x109420dc0) malloc: *** set a breakpoint in malloc_error_break to debug
-zsh: abort      ./a.out get_next_line.c
+gnlTest(7717,0x11c5b1dc0) malloc: *** set a breakpoint in malloc_error_break to debug
+
+files/alternate_line_nl_no_nl: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK
+files/alternate_line_nl_with_nl: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.KO 8.OK 9.OK 10.OK
+files/big_line_no_nl: 1.OK 2.OK
+files/big_line_with_nl: 1.OK 2.OK
+stdin: 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.OK
+[BUFFER_SIZE = 42]:
+Invalid fd: 1.OK 2.OK 3.OK
+files/empty: 1.OK 2.OK
+files/nl: 1.OK 2.OK
+files/41_no_nl: 1.OK 2.OK
+files/41_with_nl: 1.OK 2.SIGSEGV
+
+files/42_no_nl: 1.OK 2.OK
+files/42_with_nl: 1.OK 2.OK 3.OK
+files/43_no_nl: 1.OK 2.OK
+files/43_with_nl: 1.OK 2.SIGSEGV
+
+files/multiple_nlx5: 1.OK 2.SIGSEGV
+
+files/multiple_line_no_nl: 1.OK 2.OK 3.KO 4.KO 5.KO 6.OK
+files/multiple_line_with_nl: 1.OK 2.KO 3.OK 4.OK 5.OK 6.OK
+files/alternate_line_nl_no_nl: 1.OK 2.OK 3.OK 4.KO 5.KO 6.KO 7.KO 8.KO 9.SIGSEGV
+
+files/alternate_line_nl_with_nl: 1.OK 2.OK 3.OK 4.KO 5.KO 6.KO 7.KO 8.KO 9.SIGSEGV
+
+files/big_line_no_nl: 1.OK 2.OK
+files/big_line_with_nl: 1.OK 2.OK
+stdin: 1.OK 2.OK 3.OK 4.KO 5.KO 6.KO 7.KO 8.KO 9.SIGSEGV
+
+[BUFFER_SIZE = 10000000]:
+Invalid fd: 1.OK 2.OK 3.OK
+files/empty: 1.OK 2.OK
+files/nl: 1.OK 2.OK
+files/41_no_nl: 1.OK 2.OK
+files/41_with_nl: 1.OK 2.SIGSEGV
+
+files/42_no_nl: 1.OK 2.OK
+files/42_with_nl: 1.OK 2.SIGSEGV
+
+files/43_no_nl: 1.OK 2.OK
+files/43_with_nl: 1.OK 2.SIGSEGV
+
+files/multiple_nlx5: 1.OK 2.SIGSEGV
+
+files/multiple_line_no_nl: 1.OK 2.SIGSEGV
+
+files/multiple_line_with_nl: 1.OK 2.SIGSEGV
+
+files/alternate_line_nl_no_nl: 1.OK 2.SIGSEGV
+
+files/alternate_line_nl_with_nl: 1.OK 2.SIGSEGV
+
+files/big_line_no_nl: 1.OK 2.OK
+files/big_line_with_nl: 1.OK 2.OK
+stdin: 1.OK 2.SIGSEGV
+```
