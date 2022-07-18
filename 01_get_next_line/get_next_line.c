@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 11:35:45 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/18 08:28:59 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -23,7 +23,7 @@ char	*ft_read_save(int fd, char *save)
 	while (bytes != 0 && !ft_strchr(save, '\n'))
 	{
 		bytes = read(fd, lines, BUFFER_SIZE);
-		if (bytes < 0)
+		if (bytes == -1)
 		{
 			free(lines);
 			return (NULL);
@@ -52,9 +52,10 @@ char	*ft_save(char *save)
 	lines = malloc(sizeof(char) * (ft_strlen(save) - c1 + 1));
 	if (!lines)
 		return (NULL);
+	c1++;
 	c2 = 0;
-	while (lines[++c1])
-		lines[c2++] = save[c1];
+	while (lines[c1])
+		lines[c2++] = save[c1++];
 	lines[c2] = '\0';
 	free(save);
 	return (lines);

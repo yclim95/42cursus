@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 08:38:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/22 11:03:38 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/18 08:46:52 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ size_t	ft_strlen(char *str)
 {
 	size_t	counter;
 
-	counter  = 0;
+	counter = 0;
+	if (!str)
+		return (0);
 	while (str[counter] != '\0')
 		counter++;
 	return (counter);
@@ -24,13 +26,22 @@ size_t	ft_strlen(char *str)
 
 char	*ft_strchr(char *s, int c)
 {
-	while (*s != c)
+	int	i;
+	size_t len;
+
+	i = 0;
+	if (!s)
+		return (NULL);
+	len = ft_strlen(s);
+	if (c == '\0')
+		return ((char *)&s[len]);
+	while (s[i] != '\0')
 	{
-		if (*s == '\0')
-			return (NULL);
-		s++;
+		if (s[i] == (char) c)
+			return ((char *)&s[i]);
+		i++;
 	}
-	return ((char *)s);
+	return (NULL);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
@@ -59,5 +70,4 @@ char	*ft_strjoin(char *s1, char *s2)
 	s[ft_strlen(s1) + ft_strlen(s2)] = '\0';
 	free(s1);
 	return (s);
-
 }
