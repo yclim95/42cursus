@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:27:39 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/18 14:03:02 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/19 09:42:39 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -16,7 +16,7 @@ char	*ft_read_save(int fd, char *save)
 	char	*lines;
 	int		bytes;
 
-	lines = malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	lines = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!lines)
 		return (NULL);
 	bytes = 1;
@@ -49,13 +49,12 @@ char	*ft_save(char *save)
 		free(save);
 		return (NULL);
 	}
-	lines = malloc(sizeof(char) * (ft_strlen(save) - c1 + 1));
+	lines = (char *)malloc(sizeof(char) * (ft_strlen(save) - c1 + 1));
 	if (!lines)
 		return (NULL);
-	c1++;
 	c2 = 0;
-	while (lines[c1])
-		lines[c2++] = save[c1++];
+	while (save[++c1])
+		lines[c2++] = save[c1];
 	lines[c2] = '\0';
 	free(save);
 	return (lines);
@@ -64,14 +63,13 @@ char	*ft_save(char *save)
 char	*ft_getline(char *save)
 {
 	char	*lines;
-	int		c;
+	size_t	c;
 
 	c = 0;
 	if (!save[c])
 		return (NULL);
-	while (save[c] != '\n' && save[c])
-		c++;
-	lines = malloc(sizeof(char) * (c + 2));
+	c = ft_strlen(save);
+	lines = (char *)malloc(sizeof(char) * (c + 2));
 	if (!lines)
 		return (NULL);
 	c = 0;

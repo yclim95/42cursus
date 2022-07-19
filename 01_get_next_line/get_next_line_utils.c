@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 08:38:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/18 14:03:33 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/18 16:06:56 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strchr(char *s, int c)
 
 	i = 0;
 	if (!s)
-		return (NULL);
+		return (0);
 	len = ft_strlen(s);
 	if (c == '\0')
 		return ((char *)&s[len]);
@@ -41,7 +41,7 @@ char	*ft_strchr(char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
@@ -52,13 +52,13 @@ char	*ft_strjoin(char *s1, char *s2)
 
 	if (!s1)
 	{
-		s1 = malloc(sizeof(char) * 1);
+		s1 = (char *)malloc(sizeof(char) * 1);
 		s1[0] = '\0';
 	}
 	if (!s1 || !s2)
 		return (NULL);
 	s = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!s)
+	if (s == NULL)
 		return (NULL);
 	c1 = -1;
 	c2 = 0;
