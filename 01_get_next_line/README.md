@@ -66,7 +66,7 @@ gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.
 ## Testing Resources
 1. [Get Next Line Tester](https://github.com/Tripouille/gnlTester)
 
-## Testing 
+## Testing (Errors)
 
 ```
 lyao-che@u90z04s01 gnlTester % make m
@@ -143,6 +143,56 @@ files/alternate_line_nl_with_nl: 1.OK 2.SIGSEGV
 files/big_line_no_nl: 1.OK 2.OK
 files/big_line_with_nl: 1.OK 2.OK
 stdin: 1.OK 2.SIGSEGV
+```
+
+## Testing (Fixed)
+
+Small little bug.
+
+**Full Code**
+
+```c
+char	*ft_save(char *save)
+{
+	char	*lines;
+	int		c1;
+	int		c2;
+
+	c1 = 0;
+	while (save[c1] != '\n' && save[c1])
+		c1++;
+	if (!save[c1])
+	{
+		free(save);
+		return (NULL);
+	}
+	lines = malloc(sizeof(char) * (ft_strlen(save) - c1 + 1));
+	if (!lines)
+		return (NULL);
+	c1++;
+	c2 = 0;
+	while (lines[c1])
+		lines[c2++] = save[c1++];
+	lines[c2] = '\0';
+	free(save);
+	return (lines);
+}
+```
+
+**Error code**
+
+```c
+	while (lines[c1])
+		lines[c2++] = save[c1++];
+	lines[c2] = '\0';
+```
+
+**Fixed code**
+
+```c
+	while (save[++c1])
+		lines[c2++] = save[c1];
+	lines[c2] = '\0';
 ```
 
 
