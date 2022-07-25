@@ -79,4 +79,14 @@ ft_is_argument.c			ft_unsigned_decimal_format.o
 ft_is_argument.o			ft_uppercase_hexadecimal_format.c
 ft_percent_format.c			ft_uppercase_hexadecimal_format.o
 ft_percent_format.o
+
+
+Lims-iMac:02_ft_printf YCLim$ make fclean
+make clean -C ./libft
+rm -f ./ft_isalpha.o ./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o ./ft_strlen.o ./ft_memset.o ./ft_bzero.o ./ft_memcpy.o ./ft_memmove.o ./ft_strlcpy.o ./ft_strlcat.o ./ft_toupper.o ./ft_tolower.o ./ft_strchr.o ./ft_strrchr.o ./ft_strncmp.o ./ft_memchr.o ./ft_memcmp.o ./ft_strnstr.o ./ft_atoi.o ./ft_calloc.o ./ft_strdup.o ./ft_substr.o ./ft_strjoin.o ./ft_strtrim.o ./ft_split.o ./ft_itoa.o ./ft_strmapi.o ./ft_striteri.o ./ft_putchar_fd.o ./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o
+rm -f ./sources/ft_printf.o ./sources/ft_is_argument.o ./sources/ft_formats.o ./sources/ft_char_format.o ./sources/ft_string_format.o ./sources/ft_pointer_format.o ./sources/ft_decimal_format.o ./sources/ft_unsigned_decimal_format.o ./sources/ft_hexadecimal_format.o ./sources/ft_uppercase_hexadecimal_format.o ./sources/ft_percent_format.o
+make fclean -C ./libft
+rm -f ./ft_isalpha.o ./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o ./ft_strlen.o ./ft_memset.o ./ft_bzero.o ./ft_memcpy.o ./ft_memmove.o ./ft_strlcpy.o ./ft_strlcat.o ./ft_toupper.o ./ft_tolower.o ./ft_strchr.o ./ft_strrchr.o ./ft_strncmp.o ./ft_memchr.o ./ft_memcmp.o ./ft_strnstr.o ./ft_atoi.o ./ft_calloc.o ./ft_strdup.o ./ft_substr.o ./ft_strjoin.o ./ft_strtrim.o ./ft_split.o ./ft_itoa.o ./ft_strmapi.o ./ft_striteri.o ./ft_putchar_fd.o ./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o
+rm -f libft.a
+rm -f libftprintf.a
 ```
