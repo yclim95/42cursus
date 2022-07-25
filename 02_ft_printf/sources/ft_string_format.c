@@ -6,9 +6,11 @@
 /*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 11:57:31 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 11:59:51 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 12:10:53 by Lim Yao Cheng    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_format_string(char *str)
 {

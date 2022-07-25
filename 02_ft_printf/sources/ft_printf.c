@@ -6,9 +6,10 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:14:13 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 10:36:01 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/25 12:10:17 by Lim Yao Cheng    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 static int	ft_parse_input(const char *str, va_list args)
 {
