@@ -6,7 +6,7 @@
 /*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 12:01:31 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 12:05:56 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 17:57:22 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_format_pointer(void *ptr)
 	unsigned long	address;
 	char		*str;
 
-	address (unsigned long)ptr;
+	address = (unsigned long)ptr;
 	c = ft_print_prefix("0x");
 	str = ft_itoa_base(address, HEXADECIMAL_L_BASE);
 	c += ft_format_string(str);

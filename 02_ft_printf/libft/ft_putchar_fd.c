@@ -6,13 +6,14 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:14:59 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/05/23 11:15:59 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:44:48 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
+	return (1);
 }

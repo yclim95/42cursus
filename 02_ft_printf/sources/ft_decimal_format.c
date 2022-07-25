@@ -6,7 +6,7 @@
 /*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 12:14:44 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 12:19:13 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 18:04:00 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ static int	ft_check_negative(int *num)
 	if (*num == INT_MIN)
 	{
 		c = 1;
-		ft_putchar('-', 1);
-		ft_putchar('2', 1);
+		ft_putchar_fd('-', 1);
+		ft_putchar_fd('2', 1);
 		*num = 147483648;
 		c++;
 	}
 	else if (*num < 0)
 	{
 		ft_putchar_fd('-', 1);
-		*value *= -1;
+		*num *= -1;
 		c++;
 	}
 	return (c);

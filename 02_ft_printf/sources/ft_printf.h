@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 11:00:40 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 12:38:00 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 17:55:40 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	ft_format_string(char *str);
 int	ft_format_pointer(void *ptr);
 int	ft_format_decimal(int value);
 int	ft_format_unsigned_decimal(unsigned int value);
-int	ft_format_heaxadecimal(unsigned int value);
-int	ft_format_uppercase_heaxadecimal(unsigned int value);
+int	ft_format_hexadecimal(unsigned int value);
+int	ft_format_uppercase_hexadecimal(unsigned int value);
 int	ft_format_percent(char c);
 int	ft_is_argument(int c);
 

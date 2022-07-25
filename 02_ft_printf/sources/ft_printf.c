@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:14:13 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 12:10:17 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 17:51:41 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -49,6 +49,6 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	c += ft_parse_input(str, args);
 	va_end(args);
-	free(str);
+	free((void *)str);
 	return (c);
 }

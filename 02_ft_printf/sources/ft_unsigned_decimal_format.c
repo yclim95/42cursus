@@ -6,7 +6,7 @@
 /*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 12:22:16 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 12:24:09 by Lim Yao Cheng    ###   ########.fr       */
+/*   Updated: 2022/07/25 18:04:44 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_format_unsigned_decimal(unsigned int value)
 	char	*str;
 
 	str = ft_itoa_base(value, "0123456789");
-	c = ft_string_format(str);
+	c = ft_format_string(str);
 	free(str);
 	return (c);
 }
