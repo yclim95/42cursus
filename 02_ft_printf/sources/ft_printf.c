@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:14:13 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 08:27:37 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/25 08:30:12 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ static int	ft_parse_input(const char *str, va_list args)
 {
 }
 
-int	ft_printf(const char *pLArg, ...)
+int	ft_printf(const char *format, ...)
 {
 }
