@@ -25,3 +25,6 @@
    2. va_arg
    3. va_copy
    4. va_end
+
+# Tester Resources
+1. [ft_printf tester](https://github.com/Tripouille/printfTester)
