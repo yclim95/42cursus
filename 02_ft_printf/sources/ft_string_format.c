@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_string_format.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
+/*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 11:57:31 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 17:56:36 by lyao-che         ###   ########.fr       */
+/*   Created: 2022/07/26 07:57:26 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/26 07:57:29 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+                                                                      
 #include "ft_printf.h"
 
 int	ft_format_string(char *str)

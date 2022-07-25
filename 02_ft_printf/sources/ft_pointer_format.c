@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer_format.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
+/*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 12:01:31 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 17:57:22 by lyao-che         ###   ########.fr       */
+/*   Created: 2022/07/26 07:56:33 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/26 07:56:36 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

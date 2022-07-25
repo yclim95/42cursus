@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexadecimal_format.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
+/*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 12:25:30 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 12:27:13 by Lim Yao Cheng    ###   ########.fr       */
+/*   Created: 2022/07/26 07:54:41 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/26 07:54:48 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

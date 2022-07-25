@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_percent_format.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
+/*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 12:31:52 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 18:05:31 by lyao-che         ###   ########.fr       */
+/*   Created: 2022/07/26 07:55:58 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/26 07:56:03 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Lim Yao Cheng <lyao-che@student.42kl.edu.  +#+  +:+       +#+        */
+/*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/25 12:49:47 by Lim Yao Cheng     #+#    #+#             */
-/*   Updated: 2022/07/25 12:58:34 by Lim Yao Cheng    ###   ########.fr       */
+/*   Created: 2022/07/26 07:58:42 by lyao-che          #+#    #+#             */
+/*   Updated: 2022/07/26 07:58:44 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
