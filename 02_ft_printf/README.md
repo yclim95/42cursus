@@ -57,3 +57,26 @@ $(NAME):	$(OBJECTS)
 		cp $(LIBFT) $(NAME)
 		$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
 ```
+
+## Build Makefile (Result)
+
+```bash
+Lims-iMac:02_ft_printf YCLim$ make
+clang -Wall -Wextra -Werror   -c -o sources/ft_percent_format.o sources/ft_percent_format.c
+cp ./libft/libft.a libftprintf.a
+ar rcs libftprintf.a ./sources/ft_printf.o ./sources/ft_is_argument.o ./sources/ft_formats.o ./sources/ft_char_format.o ./sources/ft_string_format.o ./sources/ft_pointer_format.o ./sources/ft_decimal_format.o ./sources/ft_unsigned_decimal_format.o ./sources/ft_hexadecimal_format.o ./sources/ft_uppercase_hexadecimal_format.o ./sources/ft_percent_format.o
+
+Lims-iMac:sources YCLim$ ls
+ft_char_format.c			ft_pointer_format.c
+ft_char_format.o			ft_pointer_format.o
+ft_decimal_format.c			ft_printf.c
+ft_decimal_format.o			ft_printf.h
+ft_formats.c				ft_printf.o
+ft_formats.o				ft_string_format.c
+ft_hexadecimal_format.c			ft_string_format.o
+ft_hexadecimal_format.o			ft_unsigned_decimal_format.c
+ft_is_argument.c			ft_unsigned_decimal_format.o
+ft_is_argument.o			ft_uppercase_hexadecimal_format.c
+ft_percent_format.c			ft_uppercase_hexadecimal_format.o
+ft_percent_format.o
+```
