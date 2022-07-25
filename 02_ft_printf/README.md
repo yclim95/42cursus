@@ -14,3 +14,14 @@
    6. %x Prints a number in hexadecimal (base 16) lowercase format.
    7. %X Prints a number in hexadecimal (base 16) uppercase format.
    8. %% Prints a percent sign.
+
+# External functions
+1. Functions used before
+   1. malloc
+   2. free
+   3. write
+2. New functions to explore
+   1. va_start
+   2. va_arg
+   3. va_copy
+   4. va_end
