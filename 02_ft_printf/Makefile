@@ -1,5 +1,10 @@
 NAME = libftprintf.a
 
+
+LIBFT_PATH = ./libft
+LIBFT = $(LIBFT_PATH)/libft.a
+
+
 CC = clang
 CFLAGS = -Wall -Wextra -Werror
 
@@ -8,8 +13,6 @@ RM = rm -f
 AR = ar
 ARFLAGS = rcs
 
-LIBFT_PATH = ./libft
-LIBFT = $(LIBFT_PATH)/libft.a
 
 SOURCES = ./sources/ft_printf.c \
 		  ./sources/ft_is_argument.c \
@@ -23,26 +26,29 @@ SOURCES = ./sources/ft_printf.c \
 		  ./sources/ft_uppercase_hexadecimal_format.c \
 		  ./sources/ft_percent_format.c
 
+
+
 OBJECTS = $(SOURCES:.c=.o)
 
 .c.o: $(CC) $(CFLAGS) -c $< -o $(<:.c=.o) -I $(LIBFT_PATH)
 
 all: $(LIBFT) $(NAME)
 
-$(NAME): $(OBJECTS)
-	cp $(LIBFT) $(NAME)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
+$(LIBFT):
+		make -C $(LIBFT_PATH)
 
-$(LIBFT): make -c $(LIBFT_PATH)
+$(NAME):	$(OBJECTS)
+		cp $(LIBFT) $(NAME)
+		$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
 
 clean:
-	make clean -c $(LIBFT_PATH)
-	$(RM) $(OBJECTS)
+		make clean -C $(LIBFT_PATH)
+		$(RM) $(OBJECTS)
 
-fclean: clean
-	make clean -c $(LIBFT_PATH)
-	$(RM) $(NAME)
+fclean:	clean
+		make fclean -C $(LIBFT_PATH)
+		$(RM) $(NAME)
 
-re: fclean all
+re:	fclean all
 
-.PHONY: all clean fclean re libft
+.PHONY:	all clean fclean re libft
