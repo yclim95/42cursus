@@ -28,3 +28,32 @@
 
 # Tester Resources
 1. [ft_printf tester](https://github.com/Tripouille/printfTester)
+
+
+## Issue faced when building Makefile
+
+```bash
+Lims-iMac:02_ft_printf YCLim$ make
+make: *** No rule to make target `make', needed by `libft/libft.a'.  Stop.
+```
+
+## Before solved (Code)
+
+```Makefile
+$(NAME): $(OBJECTS)
+	cp $(LIBFT) $(NAME)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
+
+$(LIBFT): make -c $(LIBFT_PATH)
+```
+
+## Solved (Code)
+
+```Makefile
+$(LIBFT):
+		make -C $(LIBFT_PATH)
+
+$(NAME):	$(OBJECTS)
+		cp $(LIBFT) $(NAME)
+		$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
+```
