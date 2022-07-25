@@ -6,9 +6,10 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:14:13 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 10:36:01 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/25 17:51:41 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 static int	ft_parse_input(const char *str, va_list args)
 {
@@ -48,6 +49,6 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	c += ft_parse_input(str, args);
 	va_end(args);
-	free(str);
+	free((void *)str);
 	return (c);
 }

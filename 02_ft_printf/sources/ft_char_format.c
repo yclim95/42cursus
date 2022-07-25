@@ -6,11 +6,13 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 10:44:53 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 10:48:34 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 07:42:43 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_format_char(char c)
+#include "ft_printf.h"
+
+int	ft_char_format(char c)
 {
 	ft_putchar_fd(c, 1);
 	return (0 + 1);
