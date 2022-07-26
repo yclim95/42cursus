@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 07:53:25 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/26 07:53:39 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 10:05:20 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static int	ft_check_negative(int *num)
 
 int	ft_format_decimal(int value)
 {
-	int	c;
+	int		c;
 	char	*str;
 
 	c = ft_check_negative(&value);
