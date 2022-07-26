@@ -6,13 +6,13 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 07:54:41 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/26 07:54:48 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 08:48:22 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_format_heaxadecimal(unsigned int value)
+int	ft_format_hexadecimal(unsigned int value)
 {
 	int	c;
 	char	*str;

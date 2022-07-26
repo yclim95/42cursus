@@ -6,7 +6,7 @@
 #    By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 18:09:24 by lyao-che          #+#    #+#              #
-#    Updated: 2022/06/10 14:31:26 by lyao-che         ###   ########.fr        #
+#    Updated: 2022/07/26 08:24:41 by lyao-che         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,8 @@ SRC_PART1 = ./ft_isalpha.c	\
 			./ft_strnstr.c	\
 			./ft_atoi.c		\
 			./ft_calloc.c	\
-			./ft_strdup.c
+			./ft_strdup.c	\
+			./ft_itoa_base.c
 
 SRC_PART2 = ./ft_substr.c	\
 			./ft_strjoin.c	\

@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 07:58:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/26 07:58:44 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 08:26:07 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_itoa_base(unsigned long long num, char *base)
 	int	base_len;
 	char	*str;
 
-	num_len = ft_base_len(num, basE);
+	num_len = ft_base_len(num, base);
 	base_len = ft_strlen(base);
 	if (!str)
 		return (NULL);
