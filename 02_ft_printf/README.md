@@ -189,21 +189,4 @@ category: X
 category: %
 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK
 category: mix
-
-lyao-che@u90z04s01 printfTester % >....
-clang -Wall -Wextra -Werror   -c -o sources/ft_percent_format.o sources/ft_percent_format.c
-cp ./libft/libft.a libftprintf.a
-ar rcs libftprintf.a ./sources/ft_printf.o ./sources/ft_is_argument.o ./sources/ft_formats.o ./sources/ft_char_format.o ./sources/ft_string_format.o ./sources/ft_pointer_format.o ./sources/ft_decimal_format.o ./sources/ft_unsigned_decimal_format.o ./sources/ft_hexadecimal_format.o ./sources/ft_uppercase_hexadecimal_format.o ./sources/ft_percent_format.o
-[Mandatory]
-category: c
-1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK
-category: s
-1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.SIGSEGV
-category: p
-
-category: d
-1.KO 2.KO 3.KO 4.KO 5.KO 6.KO 7.KO 8.KO 9.KO 10.KO 11.KO 12.KO 13.KO 14.KO 15.KO 16.KO 17.KO 18.KO 19.KO 20.KO 21.KO 22.KO 23.KO 24.KO 25.KO 26.KO 27.KO 28.KO 29.KO
-category: i
-2.SIGSEGV 13.SIGSEGV 14.SIGSEGV 15.SIGSEGV 16.SIGSEGV 17.SIGSEGV 18.SIGSEGV 19.SIGSEGV 20.SIGSEGV 21.SIGSEGV 23.SIGSEGV 24.SIGSEGV 26.SIGSEGV 27.SIGSEGV 28.SIGSEGV
-category: u
 ```
