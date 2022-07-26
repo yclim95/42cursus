@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 07:56:33 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/26 07:56:36 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 10:55:11 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 static int	ft_print_prefix(char *str)
 {
 	int	c;
-	
+
 	c = ft_format_string(str);
 	return (c);
 }
 
 int	ft_format_pointer(void *ptr)
 {
-	int		c;
+	int				c;
 	unsigned long	address;
-	char		*str;
+	char			*str;
 
 	address = (unsigned long)ptr;
 	c = ft_print_prefix("0x");

@@ -6,15 +6,15 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:14:13 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 17:51:41 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 10:56:07 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
 
 static int	ft_parse_input(const char *str, va_list args)
 {
-	int c;
-	int in;
+	int	c;
+	int	in;
 
 	in = 0;
 	c = 0;
@@ -29,7 +29,6 @@ static int	ft_parse_input(const char *str, va_list args)
 				c += ft_formats(str[in], args);
 			else if (str[in])
 				c += ft_putchar_fd(str[in], 1);
-
 		}
 		in++;
 	}

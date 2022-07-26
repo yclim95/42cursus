@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 07:57:41 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/26 07:57:43 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 10:57:31 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_format_unsigned_decimal(unsigned int value)
 {
-	int	c;
+	int		c;
 	char	*str;
 
 	str = ft_itoa_base(value, "0123456789");

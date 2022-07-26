@@ -6,12 +6,12 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 11:00:40 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/07/25 17:55:40 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/07/26 10:58:41 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINT_H
-# define FT_PRINT_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <unistd.h>
 # include <stdlib.h>
