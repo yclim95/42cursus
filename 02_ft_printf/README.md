@@ -190,3 +190,65 @@ category: %
 1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK
 category: mix
 ```
+
+
+## Fixed: String category (SIGSEGV)
+
+code (Before)
+
+```c
+#include "ft_printf.h"
+
+int	ft_format_string(char *str)
+{
+	int	c;
+	
+	c = 0;
+	if (!str)
+		str = NULL;
+	while (str[c] != '\0')
+		c += ft_putchar_fd(str[c], 1);
+	return (c);
+}
+
+```
+
+## Code (After)
+
+```c
+#include "ft_printf.h"
+
+int	ft_format_string(char *str)
+{
+	int	c;
+
+	c = 0;
+	if (!str)
+		str = "(null)";
+	while (str[c] != '\0')
+		c += ft_putchar_fd(str[c], 1);
+	return (c);
+}
+```
+
+## Explanation (String)
+
+```c
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char *str1 = "(null)";
+    
+    printf("%s\n", str1);
+    printf("test %s\n", NULL);
+    return (0);
+}
+```
+
+## 
+
+```
+(null)
+test (null)
+```
