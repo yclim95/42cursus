@@ -112,3 +112,98 @@ int	main(void)
 	return (0);
 }
 ```
+
+
+## Testing
+
+```bash
+lyao-che@u90z04s01 printfTester % make m
+Already up to date.
+make -C ./libft
+gcc  -c ft_isalpha.c -o ft_isalpha.o
+gcc  -c ft_isdigit.c -o ft_isdigit.o
+gcc  -c ft_isalnum.c -o ft_isalnum.o
+gcc  -c ft_isascii.c -o ft_isascii.o
+gcc  -c ft_isprint.c -o ft_isprint.o
+gcc  -c ft_strlen.c -o ft_strlen.o
+gcc  -c ft_memset.c -o ft_memset.o
+gcc  -c ft_bzero.c -o ft_bzero.o
+gcc  -c ft_memcpy.c -o ft_memcpy.o
+gcc  -c ft_memmove.c -o ft_memmove.o
+gcc  -c ft_strlcpy.c -o ft_strlcpy.o
+gcc  -c ft_strlcat.c -o ft_strlcat.o
+gcc  -c ft_toupper.c -o ft_toupper.o
+gcc  -c ft_tolower.c -o ft_tolower.o
+gcc  -c ft_strchr.c -o ft_strchr.o
+gcc  -c ft_strrchr.c -o ft_strrchr.o
+gcc  -c ft_strncmp.c -o ft_strncmp.o
+gcc  -c ft_memchr.c -o ft_memchr.o
+gcc  -c ft_memcmp.c -o ft_memcmp.o
+gcc  -c ft_strnstr.c -o ft_strnstr.o
+gcc  -c ft_atoi.c -o ft_atoi.o
+gcc  -c ft_calloc.c -o ft_calloc.o
+gcc  -c ft_strdup.c -o ft_strdup.o
+gcc  -c ft_itoa_base.c -o ft_itoa_base.o
+gcc  -c ft_substr.c -o ft_substr.o
+gcc  -c ft_strjoin.c -o ft_strjoin.o
+gcc  -c ft_strtrim.c -o ft_strtrim.o
+gcc  -c ft_split.c -o ft_split.o
+gcc  -c ft_itoa.c -o ft_itoa.o
+gcc  -c ft_strmapi.c -o ft_strmapi.o
+gcc  -c ft_striteri.c -o ft_striteri.o
+gcc  -c ft_putchar_fd.c -o ft_putchar_fd.o
+gcc  -c ft_putstr_fd.c -o ft_putstr_fd.o
+gcc  -c ft_putendl_fd.c -o ft_putendl_fd.o
+gcc  -c ft_putnbr_fd.c -o ft_putnbr_fd.o
+ar crs libft.a ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_strlen.o ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_strlcpy.o ft_strlcat.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_memchr.o ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_itoa_base.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+clang -Wall -Wextra -Werror   -c -o sources/ft_printf.o sources/ft_printf.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_is_argument.o sources/ft_is_argument.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_formats.o sources/ft_formats.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_char_format.o sources/ft_char_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_string_format.o sources/ft_string_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_pointer_format.o sources/ft_pointer_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_decimal_format.o sources/ft_decimal_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_unsigned_decimal_format.o sources/ft_unsigned_decimal_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_hexadecimal_format.o sources/ft_hexadecimal_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_uppercase_hexadecimal_format.o sources/ft_uppercase_hexadecimal_format.c
+clang -Wall -Wextra -Werror   -c -o sources/ft_percent_format.o sources/ft_percent_format.c
+cp ./libft/libft.a libftprintf.a
+ar rcs libftprintf.a ./sources/ft_printf.o ./sources/ft_is_argument.o ./sources/ft_formats.o ./sources/ft_char_format.o ./sources/ft_string_format.o ./sources/ft_pointer_format.o ./sources/ft_decimal_format.o ./sources/ft_unsigned_decimal_format.o ./sources/ft_hexadecimal_format.o ./sources/ft_uppercase_hexadecimal_format.o ./sources/ft_percent_format.o
+[Mandatory]
+category: c
+1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK
+category: s
+1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.SIGSEGV
+category: p
+
+category: d
+1.KO 2.KO 3.KO 4.KO 5.KO 6.KO 7.KO 8.KO 9.KO 10.KO 11.KO 12.KO 13.KO 14.KO 15.KO 16.KO 17.KO 18.KO 19.KO 20.KO 21.KO 22.KO 23.KO 24.KO 25.KO 26.KO 27.KO 28.KO 29.KO
+category: i
+2.SIGSEGV 13.SIGSEGV 14.SIGSEGV 15.SIGSEGV 16.SIGSEGV 17.SIGSEGV 18.SIGSEGV 19.SIGSEGV 20.SIGSEGV 21.SIGSEGV 23.SIGSEGV 24.SIGSEGV 26.SIGSEGV 27.SIGSEGV 28.SIGSEGV
+category: u
+
+category: x
+1.KO 2.KO 3.KO 4.KO 5.KO 6.KO 7.KO 8.KO 9.KO 10.KO 11.KO 12.KO 13.KO 14.KO 15.KO 16.KO 17.KO 18.KO 19.KO 20.KO 21.KO 22.KO 23.KO 24.KO 25.KO 26.KO 27.KO 28.KO 29.KO 30.KO 31.KO
+category: X
+
+category: %
+1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK
+category: mix
+
+lyao-che@u90z04s01 printfTester % >....
+clang -Wall -Wextra -Werror   -c -o sources/ft_percent_format.o sources/ft_percent_format.c
+cp ./libft/libft.a libftprintf.a
+ar rcs libftprintf.a ./sources/ft_printf.o ./sources/ft_is_argument.o ./sources/ft_formats.o ./sources/ft_char_format.o ./sources/ft_string_format.o ./sources/ft_pointer_format.o ./sources/ft_decimal_format.o ./sources/ft_unsigned_decimal_format.o ./sources/ft_hexadecimal_format.o ./sources/ft_uppercase_hexadecimal_format.o ./sources/ft_percent_format.o
+[Mandatory]
+category: c
+1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK
+category: s
+1.OK 2.OK 3.OK 4.OK 5.OK 6.OK 7.OK 8.OK 9.OK 10.SIGSEGV
+category: p
+
+category: d
+1.KO 2.KO 3.KO 4.KO 5.KO 6.KO 7.KO 8.KO 9.KO 10.KO 11.KO 12.KO 13.KO 14.KO 15.KO 16.KO 17.KO 18.KO 19.KO 20.KO 21.KO 22.KO 23.KO 24.KO 25.KO 26.KO 27.KO 28.KO 29.KO
+category: i
+2.SIGSEGV 13.SIGSEGV 14.SIGSEGV 15.SIGSEGV 16.SIGSEGV 17.SIGSEGV 18.SIGSEGV 19.SIGSEGV 20.SIGSEGV 21.SIGSEGV 23.SIGSEGV 24.SIGSEGV 26.SIGSEGV 27.SIGSEGV 28.SIGSEGV
+category: u
+```
