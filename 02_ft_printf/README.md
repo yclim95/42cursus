@@ -90,3 +90,25 @@ rm -f ./ft_isalpha.o ./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o
 rm -f libft.a
 rm -f libftprintf.a
 ```
+
+
+## main.c
+
+```c
+#include "ft_printf.h"
+
+int	main(void)
+{
+	ft_printf("single character: %c\n", 'a');
+	ft_printf("String: %s\n", "Testing");
+	ft_printf("Pointer: %p\n", &ft_printf);
+	ft_printf("Decimal: %d\n", 42);
+	ft_printf("Integer Base10: %i\n", 12312);
+	ft_printf("Unsigned Decimal Base10: %u\n", 1543);
+	ft_printf("Hexadecimal lowercase (Base16): %x\n", 505);
+	ft_printf("Hexadecimal Uppercase (Base16), %X\n", 505);
+	ft_printf("%%\n sign");
+
+	return (0);
+}
+```
