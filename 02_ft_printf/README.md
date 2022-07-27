@@ -22,8 +22,8 @@
    3. write
 2. New functions to explore
    1. [va_start](https://www.tutorialspoint.com/c_standard_library/c_macro_va_start.htm)
-   	1. The C library macro void va_start(va_list ap, last_arg) **initializes ap variable** to be used with the va_arg and va_end macros.
-	2. ```void va_start(va_list ap, last_arg);```
+       1. The C library macro void va_start(va_list ap, last_arg) **initializes ap variable** to be used with the va_arg and va_end macros
+       2. ```void va_start(va_list ap, last_arg);```
    2. [va_arg](https://www.tutorialspoint.com/c_standard_library/c_macro_va_arg.htm)
    	1. The C library macro type va_arg(va_list ap, type) **retrieves the next argument** in the parameter list of the function with type.
 	2. ```type va_arg(va_list ap, type)```
