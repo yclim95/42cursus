@@ -25,14 +25,14 @@
        1. The C library macro void va_start(va_list ap, last_arg) **initializes ap variable** to be used with the va_arg and va_end macros
        2. ```void va_start(va_list ap, last_arg);```
    2. [va_arg](https://www.tutorialspoint.com/c_standard_library/c_macro_va_arg.htm)
-   	1. The C library macro type va_arg(va_list ap, type) **retrieves the next argument** in the parameter list of the function with type.
-	2. ```type va_arg(va_list ap, type)```
+       1. The C library macro type va_arg(va_list ap, type) **retrieves the next argument** in the parameter list of the function with type.
+       2. ```type va_arg(va_list ap, type)```
    3. [va_copy](https://linux.die.net/man/3/va_copy)
-   	1. The va_copy() macro copies the (previously initialized) variable argument list src to dest. 
-	2. ```void va_copy(va_list dest, va_list src);```
+       1. The va_copy() macro copies the (previously initialized) variable argument list src to dest. 
+       2. ```void va_copy(va_list dest, va_list src);```
    4. [va_end](https://www.tutorialspoint.com/c_standard_library/c_macro_va_end.htm)
-   	1. The C library macro void va_end(va_list ap) allows a function with variable arguments which used the **va_start macro to return**.
-	2. ```void va_end(va_list ap)```
+       1. The C library macro void va_end(va_list ap) allows a function with variable arguments which used the **va_start macro to return**.
+       2. ```void va_end(va_list ap)```
 
 # Tester Resources
 1. [ft_printf tester](https://github.com/Tripouille/printfTester)
