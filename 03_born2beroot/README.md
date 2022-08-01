@@ -72,3 +72,8 @@ saved):
 		3. • For Mac M1: shasum Centos.utm/Images/disk-0.qcow2
 		4. • MacOS: shasum centos_serv.vdi
 	11. This is an example of what kind of output you will get: ```6e657c4619944be17df3c31faa030c25e43e40af```
+	12. Please note that your virtual machine’s signature may be altered **after your first evaluation**. To solve this problem, you can
+		1. duplicate your virtual machine or
+		2. use save state.
+	13. It is of course **FORBIDDEN** to turn in your virtual machine in your Git repository. During the defense, the signature of the signature.txt
+file will be compared with the one of your virtual machine. If the two of them are not identical, your grade will be 0.
