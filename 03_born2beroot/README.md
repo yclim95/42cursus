@@ -60,3 +60,15 @@ is. In short, understand what you use!
 			11. The IPv4 address of your server and its MAC (Media Access Control) address.
 			12. The number of commands executed with the sudo program
 	8. During the defense, you will be asked to explain how this script works. You will also have to interrupt it without modifying it. Take a look at ***cron***.
+	9. You only have to turn in a **signature.txt** file at the root of your Git repository. You must paste in it the signature of your machine’s virtual disk. To get this signature, you first have to open the default installation folder (it is the folder where your VMs are
+saved):
+		1. • Windows: %HOMEDRIVE%%HOMEPATH%\VirtualBox VMs\
+		2. • Linux: ~/VirtualBox VMs/
+		3. • MacM1: ~/Library/Containers/com.utmapp.UTM/Data/Documents/
+		4. • MacOS: ~/VirtualBox VMs/
+	10. Then, retrieve the signature from the ".vdi" file (or ".qcow2 for UTM’users) of your virtual machine in **sha1** format. Below are 4 command examples for a **centos_serv.vdi** file:
+		1. • Windows: certUtil -hashfile centos_serv.vdi sha1
+		2. • Linux: sha1sum centos_serv.vdi
+		3. • For Mac M1: shasum Centos.utm/Images/disk-0.qcow2
+		4. • MacOS: shasum centos_serv.vdi
+	11. This is an example of what kind of output you will get: ```6e657c4619944be17df3c31faa030c25e43e40af```
