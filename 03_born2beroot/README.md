@@ -77,3 +77,92 @@ saved):
 		2. use save state.
 	13. It is of course **FORBIDDEN** to turn in your virtual machine in your Git repository. During the defense, the signature of the signature.txt
 file will be compared with the one of your virtual machine. If the two of them are not identical, your grade will be 0.
+
+
+
+## Introduction
+
+Thanks [@ayoub0x1](https://github.com/ayoub0x1/born2beroot) for this project explanation. The notes below all thanks to @ayoub0x1 (Credit to)
+
+
+# 42KL 
+
+1. **Virtual Machine** :  is a software capable of installing an Operating System within itself, making the OS think that it is hosted on a real computer.
+2. **hypervisor** : software program that creates virtual machines (VM)
+    - responsible for isolating the VM resources from the system hardware and making the necessary implementations so that the VM can use these resources.
+3. **host machines** or **hosts** :  The devices that provide the hardware resources.
+4. **guests** or **guest machines** : The different virtual machines that can be assigned to a host.
+5. **Virtualization** allow us share a system with multiple virtual environments.
+    - The **hypervisor** manages the hardware system and separate the physical resources from the virtual environments.
+    The resources are managed following the needs, from the host to the guests.
+6. ***LVM (Logical Volume Manager)*** is an abstraction layer between a storage device and a file system.
+    - MAIN advantage is that we have much **more flexibility** when it comes to managing partitions.
+    - By using LVM, we can expand the storage of any partition (now known as a logical volume) whenever we want without worrying about the contiguous space available on each logical volume.
+    - We can do this with available storage located on different physical disks (which we cannot do with traditional partitions).
+    We can also move different logical volumes between physical devices.
+    Of course, services and processes will work the same way they always have.
+7. ***Physical Volume (PV)***: physical storage device.
+    1. It can be a hard disk, an SD card, a floppy disk, etc.
+    2. This device provides us with storage available to use.
+8. ***Volume Group (VG)***:
+    1. to use the space provided by a PV, it must be allocated in a volume group.
+    2. It is like a **virtual storage disk** that will be used by logical volumes.
+    3. VGs can grow over time by adding new VPs.
+8. ***Logical volume (LV)***:
+    1. these devices will be the ones we will use to create file systems, swaps, virtual machines, etc.
+    2. If the **VG** is the (storage disk), the **LV** are the (partitions) that are made on this disk.
+9. ***AppArmor***
+    1. AppArmor provides **Mandatory Access Control (MAC) security**.
+    2. In fact, AppAmor allows the system administrator to **restrict** the actions that processes can perform. 
+    3. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor **blocks** the application so that the damage does not spread to the rest of the system.
+    4. In AppArmor, processes are **restricted** by profiles.
+    5. Profiles can work in complain-mode and in enforce-mode.
+    6. In enforce mode, AppArmor **prohibits** applications from performing restricted tasks.
+    7. In complain-mode, AppArmor **allows** applications to do these tasks, but creates a **registry entry** to display the **complaint**.
+10. ***Aptitute*** vs. ***Apt***
+    1. In Debian-based OS distributions, the default package manager we can use is ***dpkg***.
+        - This tool allows us to install, remove and manage programs on our operating system. 
+        - However, in most cases, these programs come with a **list of dependencies** that must be installed for the main program to function properly.
+11. One option is to manually install these dependencies. However, ***APT*** (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program.
+    - So now we can install a useful program with a **single command**.
+    - APT can work with different back-ends and fron-ends to make use of its services.
+    - One of them is ***apt-get***, which allows us to install and remove packages.
+    - Along with apt-get, there are also many tools like ***apt-cache*** to manage programs.
+    - In this case, apt-get and apt-cache are used by apt. 
+    - Thanks to apt we can install **.deb** programs easily and without worrying about dependencies.
+12. But in case we want to use a graphical interface (GUI), we will have to use ***aptitude***.
+    - Aptitude also does **better control** of dependencies, allowing the user to **choose** between different dependencies when installing a program.
+13. How to use SSH?
+    1. ***SSH*** or Secure Shell is a **remote administration protocol** that allows users to control and modify their servers over the Internet thanks to an authentication mechanism.
+    2. Provides a mechanism to **authenticate** a user remotely, transfer data from the client to the host, and return a response to the request made by the client.
+    3. SSH was created as an alternative to **Telnet**, which does not encrypt the information that is sent.
+    4. SSH uses **encryption** techniques to ensure that all client-to-host and host-to-client communications are done in encrypted form. 
+    5. One of the advantages of SSH is that a user using Linux or MacOS can use SSH on their server to communicate with it remotely through their computer's terminal.
+    6. Once **authenticated**, that user will be able to use the terminal to work on the server.
+    7. The command used to connect to a server with ssh is:
+        ```ssh {username}@{IP_host} -p {port}```
+    8. There are 3 different techniques that SSH uses to encrypt:
+        1. ***Symmetric encryption***: a method that uses the **same secret key** for both encryption and decryption of a message, for both the client and the host.
+        2. Anyone who knows the password can access the message that has been transmitted.
+        2. ***Asymmetric encryption***:
+            1. uses ***2 separate keys*** for encryption and decryption.
+            2. These are known as the public key and the private key.
+            3. Together, they form the **public-private key pair**.
+        3. ***Hashing***:
+            1. another form of cryptography used by **SSH**.
+            2. Hash functions are made in a way that they **don't need to be decrypted**.
+            3. If a client has the correct input, they can create a cryptographic hash and SSH will **check if both hashes are the same**.
+14. How to implement UFW with SSH?
+    1. ***UFW (Uncomplicated Firewall)*** is a software application responsible for ensuring that the system administrator can manage **iptables** in a simple way. 
+    2. Since it is very difficult to work with iptables, UFW provides us with an **interface to modify** the firewall of our device (netfilter) without compromising security.
+    3. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close.
+    4. This will also be very **useful with SSH**, greatly improving all security related to communications between devices.
+15. What is **cron** and what is **wall**?
+    1. Once we know a little more about how to build a server inside a Virtual Machine (remember that you also have to look in other pages apart from this README), we will see 2 commands that will be very helpful in case of being system administrators. These commands are:
+        1. ***Cron***:
+            1. **Linux task manager** that allows us to execute commands at a certain time.
+            2. We can **automate** some tasks just by telling cron what command we want to run at a specific time.
+            3. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
+        2. ***Wall***:
+            1. command used by the root user to **send a message** to all users currently connected to the server.
+            2. If the system administrator wants to alert about a major server change that could cause users to log out, the **root user** could **alert** them with wall.
