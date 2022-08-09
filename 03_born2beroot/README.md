@@ -166,3 +166,7 @@ Thanks [@ayoub0x1](https://github.com/ayoub0x1/born2beroot) for this project exp
         2. ***Wall***:
             1. command used by the root user to **send a message** to all users currently connected to the server.
             2. If the system administrator wants to alert about a major server change that could cause users to log out, the **root user** could **alert** them with wall.
+16. [VDI vs. VHD vs. VMDK](https://www.parallels.com/blogs/ras/vdi-vs-vhd-vs-vmdk/)
+    1. VDI (VirtualBox Disk Image) : Oracle VirtualBox
+    2. VHD (Virtual Hard Disk) : Microsoft’s virtualization products
+    3. VMDK (Virtual Machine Disk) : VMware’s own virtual disk format
