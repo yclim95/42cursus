@@ -170,7 +170,7 @@ Thanks [@ayoub0x1](https://github.com/ayoub0x1/born2beroot) for this project exp
     1. VDI (VirtualBox Disk Image) : Oracle VirtualBox
     2. VHD (Virtual Hard Disk) : Microsoft’s virtualization products
     3. VMDK (Virtual Machine Disk) : VMware’s own virtual disk format
-17. [CENTOS vs. Debian](https://i.imgur.com/qpq2DIg.png)
+17. [CENTOS vs. Debian](https://1gbits.com/blog/debian-vs-centos/)
 	![CENTOS vs. Debian](https://i.imgur.com/qpq2DIg.png)
 18. [AppArmor vs. SELinux](https://i.imgur.com/8cOzIkk.png)
 	![AppArmor vs. SELinux](https://i.imgur.com/8cOzIkk.png)
