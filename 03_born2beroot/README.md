@@ -174,3 +174,5 @@ Thanks [@ayoub0x1](https://github.com/ayoub0x1/born2beroot) for this project exp
 	![CENTOS vs. Debian](https://i.imgur.com/qpq2DIg.png)
 18. [AppArmor vs. SELinux](https://i.imgur.com/8cOzIkk.png)
 	![AppArmor vs. SELinux](https://i.imgur.com/8cOzIkk.png)
+19. VM Clone: Make a copy of a VM
+20. Snapshot: Create a save point (version) & can revert to previous save point (version)
