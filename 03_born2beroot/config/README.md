@@ -48,3 +48,12 @@ $ apt install sudo
 ```
 
 ![Verify IF Sudo is installed correctly](https://i.imgur.com/TDWjOa7.png)
+
+
+1.6. Adding <<username>> to Sudo Group
+  
+```
+# adduser <username> sudo
+```
+
+![Adding  to Sudo Group](https://i.imgur.com/tQMHeQf.png)
