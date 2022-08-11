@@ -85,3 +85,5 @@ Add this line in file:
 ```
 your_username    ALL=(ALL) ALL
 ```
+
+![Sudo Visudo](https://i.imgur.com/pWyyn5u.png)
