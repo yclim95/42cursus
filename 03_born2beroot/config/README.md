@@ -38,4 +38,4 @@ $ apt-get upgrade -y
 $ apt install sudo
 ```
 
-![Install Sudo](https://i.imgur.com/SAJh5QH.png)
+![Install Sudo](https://i.imgur.com/vumlD69.png)
