@@ -2,10 +2,10 @@
 
 ## 1. Installing Sudo
 
-1.1. login as root
+1.1. Enter Paraphraase
 
 ```
-Enter your root paraphrase
+Enter your paraphrase
 ```
 
 1.2. login as user
@@ -18,7 +18,17 @@ Password:
 ![Login as user](https://i.imgur.com/rW3Pa3j.png)
 
 
-1.3. Install Sudo
+1.3.  Gaining Root Access in the Terminal
+
+Enter ```su -```
+
+```
+$ su -
+Password:
+```
+
+
+1.4. Install Sudo
 
 ```
 $ apt-get update -y
