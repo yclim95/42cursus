@@ -57,3 +57,31 @@ $ apt install sudo
 ```
 
 ![Adding  to Sudo Group](https://i.imgur.com/tQMHeQf.png)
+
+
+1.7. Check if user is in sudo group
+
+```
+$ getent group sudo
+```
+  
+![Check if user is in sudo group](https://i.imgur.com/7evogJK.png)
+  
+
+1.8. Perform checkup to ensure the sytem is not BREAK after making changes
+  
+
+Why use **Visudo** ?
+
+
+You use visudo mostly to prevent from breaking your system. Visudo runs checks on your changes to make sure you didn't mess anything up. If you did mess something up, you could completely wreck your ability to fix it or do anything requiring privileges without rebooting into a rescue mode.
+  
+```
+$ sudo visudo
+```
+
+Add this line in file:
+
+```
+your_username    ALL=(ALL) ALL
+```
