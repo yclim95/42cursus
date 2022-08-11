@@ -87,3 +87,5 @@ your_username    ALL=(ALL) ALL
 ```
 
 ![Sudo Visudo](https://i.imgur.com/pWyyn5u.png)
+  
+Press ```Ctrl + o``` to save and ```Ctrl + x``` to exit.
