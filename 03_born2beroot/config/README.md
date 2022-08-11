@@ -39,3 +39,12 @@ $ apt install sudo
 ```
 
 ![Install Sudo](https://i.imgur.com/vumlD69.png)
+
+
+1.5. Verify IF Sudo is installed correctly
+
+```
+# dpkg -l | grep sudo
+```
+
+![Verify IF Sudo is installed correctly](https://i.imgur.com/TDWjOa7.png)
