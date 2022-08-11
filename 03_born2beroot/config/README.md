@@ -91,8 +91,12 @@ your_username    ALL=(ALL) ALL
 Press ```Ctrl + o``` to save and ```Ctrl + x``` to exit.
 
   
-1.9. Reboot for changes to take effect.
+1.9. ```reboot``` for changes to take effect & log in and verify sudopowers via ```sudo -v```
 
 ```
 # reboot
+---
+# sudo -v
 ```
+  
+![Reboot + Sudo-v](https://i.imgur.com/WJEyi11.png)
