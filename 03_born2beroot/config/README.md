@@ -27,6 +27,8 @@ $ su -
 Password:
 ```
 
+![Root access](https://i.imgur.com/SAJh5QH.png)
+
 
 1.4. Install Sudo
 
@@ -35,3 +37,5 @@ $ apt-get update -y
 $ apt-get upgrade -y
 $ apt install sudo
 ```
+
+![Install Sudo](https://i.imgur.com/SAJh5QH.png)
