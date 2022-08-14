@@ -112,3 +112,8 @@ $ apt-get update -y
 $ apt-get upgrade -y
 $ apt-get install git -y
 ```
+
+![Install Git tool Part1](https://i.imgur.com/Tt8B0uk.png)
+  
+
+![Install Git tool Part2](https://i.imgur.com/zWQKePy.png)
