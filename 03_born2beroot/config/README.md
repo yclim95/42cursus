@@ -117,3 +117,30 @@ $ apt-get install git -y
   
 
 ![Install Git tool Part2](https://i.imgur.com/zWQKePy.png)
+  
+  
+1.6.2. Check git version
+  
+```
+$ git --version
+```
+  
+1.6.3. Installing wget (wget is a free and open source tool for downloading files from web repositories.)
+
+```
+$ sudo apt-get install wget
+```
+  
+1.6.4. Installing Vim
+  
+```
+$ sudo apt-get install vim  
+```
+
+1.6.4.  Installing [Oh my zsh](https://ohmyz.sh/)
+  
+```
+$ sudo apt-get install zsh
+$ zsh --version
+$ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
