@@ -41,7 +41,7 @@ $ apt install sudo
 ![Install Sudo](https://i.imgur.com/vumlD69.png)
 
 
-1.5. Verify IF Sudo is installed correctly
+1.5.1. Verify IF Sudo is installed correctly
 
 ```
 # dpkg -l | grep sudo
@@ -50,7 +50,7 @@ $ apt install sudo
 ![Verify IF Sudo is installed correctly](https://i.imgur.com/TDWjOa7.png)
 
 
-1.6. Adding <<username>> to Sudo Group
+1.5.2. Adding <<username>> to Sudo Group
   
 ```
 # adduser <username> sudo
@@ -59,7 +59,7 @@ $ apt install sudo
 ![Adding  to Sudo Group](https://i.imgur.com/tQMHeQf.png)
 
 
-1.7. Check if user is in sudo group
+1.5.3. Check if user is in sudo group
 
 ```
 $ getent group sudo
@@ -68,7 +68,7 @@ $ getent group sudo
 ![Check if user is in sudo group](https://i.imgur.com/7evogJK.png)
   
 
-1.8. Perform checkup to ensure the sytem is not BREAK after making changes
+1.5.4. Perform checkup to ensure the sytem is not BREAK after making changes
   
 
 Why use **Visudo** ?
@@ -91,7 +91,7 @@ your_username    ALL=(ALL) ALL
 Press ```Ctrl + o``` to save and ```Ctrl + x``` to exit.
 
   
-1.9. ```reboot``` for changes to take effect & log in and verify sudopowers via ```sudo -v```
+1.5.5. ```reboot``` for changes to take effect & log in and verify sudopowers via ```sudo -v```
 
 ```
 # reboot
@@ -100,3 +100,15 @@ Press ```Ctrl + o``` to save and ```Ctrl + x``` to exit.
 ```
   
 ![Reboot + Sudo-v](https://i.imgur.com/WJEyi11.png)
+
+
+
+1.6. Installing tools
+
+1.6.1. Installing git
+
+```
+$ apt-get update -y
+$ apt-get upgrade -y
+$ apt-get install git -y
+```
