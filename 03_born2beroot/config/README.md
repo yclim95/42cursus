@@ -251,21 +251,31 @@ $ apt-get install ufw
 ```
 $ sudo ufw enable
 ```
+  
+![Enable UFW](https://i.imgur.com/dwms3i5.png)
 
 1.8.3. Check the Status
 
 ```
 $ sudo ufw status numbered
 ```
+  
+![Check the status of UFW](https://i.imgur.com/NYhbqvl.png)
+
 
 1.8.4. Configure the rules
 
 ```
 $ sudo ufw allow ssh
 ```
+  
+![UFW - Allow SSH](https://imgur.com/a/Wpw8Pv8)
+
 
 1.8.5. Configure the port rules
 
 ```
 $ sudo ufw allow 4242
 ```
+  
+![UFW - Allow Port 4242](https://i.imgur.com/eTy4m20.png)
