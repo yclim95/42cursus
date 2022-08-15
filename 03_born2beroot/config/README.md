@@ -241,6 +241,10 @@ $ sudo service ssh restart
 ```
 $ apt-get install ufw
 ```
+  
+![Install UFW Part1](https://i.imgur.com/sk5ceai.png)
+![Install UFW Part1](https://i.imgur.com/8nH7Efk.png)
+
 
 1.8.2. Enable
 
