@@ -163,3 +163,57 @@ $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/insta
 ![Install Oh my ZSH Part1](https://i.imgur.com/Q1cfozt.png)
 ![Install Oh my ZSH Part2](https://i.imgur.com/wj951Tv.png)
 ![Install Oh my ZSH Part3](https://i.imgur.com/DIH8YKh.png)
+
+  
+1.7. Installing SSH and configuring SSH service
+
+```
+$ sudo apt-get update
+$ sudo apt install openssh-server
+```
+  
+1.7.1. Check the SSH server status
+  
+```
+$ sudo systemctl status ssh
+```
+  
+1.7.2. Restart the SSH service
+  
+```
+$ service ssh restart
+```
+  
+1.7.3. Changing default port (22) to 4242
+  
+```
+$ sudo nano /etc/ssh/sshd_config
+```
+  
+Edit the file change the line #Port22 to Port 4242
+  
+  
+Find third line:
+  
+```
+#Port 22
+```
+  
+Change it like this:
+  
+```
+Port 4242
+```
+  
+  
+1.7.4. Check if port settings got right
+  
+```
+$ sudo grep Port /etc/ssh/sshd_config
+```
+
+1.7.5. Restart the SSH service
+
+```
+$ sudo service ssh restart
+```
