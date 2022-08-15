@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 09:56:52 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/15 10:06:34 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/15 14:32:30 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,11 @@ int main(void)
 	sig.sa_flags = SA_SIGINFO;
 	sig.sa_mask = sig_set;
 	sig.sa_sigaction = ft_handle_server_client_signal;
-	sigaction(SIGUSR1, );
+	sigaction(SIGUSR1, &sig, NULL);
+	sigaction(SIGUSR2, &sig, NULL);
+	ft_putstr("Use this PID no. to send your message: ");
+	ft_putnbr(getpid());
+	ft_putstr("\n");
 	while (1)
 		pause();
 }
