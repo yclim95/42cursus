@@ -172,6 +172,11 @@ $ sudo apt-get update
 $ sudo apt install openssh-server
 ```
   
+![Install SSH Part 1](https://i.imgur.com/qtvHIvP.png)
+![Install SSH Part 2](https://i.imgur.com/k0j9mwc.png)
+![Install SSH Part 3](https://i.imgur.com/NyFzGOQ.png)
+
+
 1.7.1. Check the SSH server status
   
 ```
