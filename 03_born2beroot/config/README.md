@@ -269,7 +269,7 @@ $ sudo ufw status numbered
 $ sudo ufw allow ssh
 ```
   
-![UFW - Allow SSH](https://imgur.com/a/Wpw8Pv8)
+![UFW - Allow SSH](https://i.imgur.com/aYTKeN1.png)
 
 
 1.8.5. Configure the port rules
