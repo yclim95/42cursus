@@ -183,6 +183,9 @@ $ sudo apt install openssh-server
 $ sudo systemctl status ssh
 ```
   
+![check SSH server status](https://i.imgur.com/O8rntF3.png)
+
+  
 1.7.2. Restart the SSH service
   
 ```
@@ -194,6 +197,8 @@ $ service ssh restart
 ```
 $ sudo nano /etc/ssh/sshd_config
 ```
+  
+![Nano SSH config](https://i.imgur.com/nZsAa2s.png)
   
 Edit the file change the line #Port22 to Port 4242
   
@@ -210,12 +215,17 @@ Change it like this:
 Port 4242
 ```
   
+![Nano SSH config -> Change to Port 4242](https://i.imgur.com/tg7OJ1K.png)
+  
   
 1.7.4. Check if port settings got right
   
 ```
 $ sudo grep Port /etc/ssh/sshd_config
 ```
+  
+![Check SSH Config Port settings](https://i.imgur.com/a03pq59.png)
+
 
 1.7.5. Restart the SSH service
 
