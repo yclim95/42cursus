@@ -125,17 +125,27 @@ $ apt-get install git -y
 $ git --version
 ```
   
+![Check Git version](https://i.imgur.com/VsHnxrN.png)
+
+  
 1.6.3. Installing wget (wget is a free and open source tool for downloading files from web repositories.)
 
 ```
 $ sudo apt-get install wget
 ```
   
+![Install Wget](https://i.imgur.com/NZjxFem.png)
+  
 1.6.4. Installing Vim
   
 ```
 $ sudo apt-get install vim  
 ```
+  
+![Install Vim Part1](https://i.imgur.com/lAn5SbY.png)
+  
+![Install Vim Part2]([https://i.imgur.com/lAn5SbY.png](https://i.imgur.com/qFjOG7u.png))
+
 
 1.6.4.  Installing [Oh my zsh](https://ohmyz.sh/)
   
@@ -144,3 +154,12 @@ $ sudo apt-get install zsh
 $ zsh --version
 $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
+
+  
+![Install zsh](https://i.imgur.com/lcdgtzR.png)
+  
+![Check zsh version](https://i.imgur.com/WcbP42d.png)
+  
+![Install Oh my ZSH Part1](https://i.imgur.com/Q1cfozt.png)
+![Install Oh my ZSH Part2](https://i.imgur.com/wj951Tv.png)
+![Install Oh my ZSH Part3](https://i.imgur.com/DIH8YKh.png)
