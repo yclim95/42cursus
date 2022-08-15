@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 10:07:36 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/15 10:11:42 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/15 11:47:59 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,14 @@ pid_t	getpid(void)
 
 int main(int argc, char **argv)
 {
+	if (ft_str_isdigit(argv[1]) || argc != 3)
+	{
+		ft_putstr("Invalid arguments.\n"
+		ft_putstr("Try: ./client + server PID number + message.\n"
+		exit(EXIT_FAILURE);
+	}
+	else
+	{
+
+	}
 }
