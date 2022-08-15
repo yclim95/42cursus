@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 10:07:36 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/15 11:47:59 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/15 14:34:35 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-
+		signal(SIGUSR1, ft_handle_client_signal);
+		signal(SIGUSR2, ft_handle_client_signal);
+		ft_send_msg_bit_by_bit(atoi(argv[1]),argv[2]);
 	}
+	while(1)
+		pause();
 }
