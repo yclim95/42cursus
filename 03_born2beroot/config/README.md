@@ -232,3 +232,36 @@ $ sudo grep Port /etc/ssh/sshd_config
 ```
 $ sudo service ssh restart
 ```
+
+
+1.8. Installing and configuring UFW (Uncomplicated Firewall)
+
+1.8.1. Install UFW
+
+```
+$ apt-get install ufw
+```
+
+1.8.2. Enable
+
+```
+$ sudo ufw enable
+```
+
+1.8.3. Check the Status
+
+```
+$ sudo ufw status numbered
+```
+
+1.8.4. Configure the rules
+
+```
+$ sudo ufw allow ssh
+```
+
+1.8.5. Configure the port rules
+
+```
+$ sudo ufw allow 4242
+```
