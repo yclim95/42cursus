@@ -395,6 +395,7 @@ password    requisite         pam_pwquality.so retry=3 lcredit =-1 ucredit=-1 dc
   
 ```
 $ sudo nano /etc/login.defs
+```
   
   
 6.2.1. Find this part
