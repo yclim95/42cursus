@@ -554,3 +554,5 @@ Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 Now my /etc/sudoers file looks like this
 
 ![Configuring sudoers group](https://i.imgur.com/d2hzF2x.png)
+
+![Configuring sudoers group](https://i.imgur.com/aOdnYTV.png)
