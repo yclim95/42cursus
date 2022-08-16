@@ -285,9 +285,34 @@ $ sudo ufw allow 4242
 1.9. Connecting SSH server
 Add forward rule for VirtualBox
 
-1. Go to VirtualBox-> Choose the VM->Select Settings
-2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
-3. Enter the values (4242) for Host & Guest Port
+1.9.1. Go to VirtualBox-> Choose the VM->Select Settings
+1.9.2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
+1.9.3. Enter the values (4242) for Host & Guest Port
 
 ![Configure SSH Server](https://i.imgur.com/TDgwvfS.png)
 ![Configure SSH Server - Set Port Forwarding](https://i.imgur.com/JlHs4nR.png)
+
+  
+1.9.4. Restart SSH server (go to the your VM machine)
+  
+```
+$ sudo systemctl restart ssh
+```
+
+1.9.5. Check ssh status:
+  
+```
+$ sudo service sshd status
+```
+  
+1.9.6. From host side from iTerm2 or Terminal enter as shown below:
+  
+```
+$ ssh your_username@127.0.0.1 -p 4242
+```
+  
+1.9.7. Quit the connection:
+  
+```
+$ exit
+```
