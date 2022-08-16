@@ -499,7 +499,8 @@ $ chage -l your_new_username
 ![Check IF the password working rules is working](https://i.imgur.com/BF9kdd7.png)
 
   
-8. Command to change username if needed
+## Command to change username if needed
 
 ![Command to change user name](https://i.imgur.com/qPdGyNk.png)
   
+![Command to change user name](https://i.imgur.com/74YOCK1.png)
