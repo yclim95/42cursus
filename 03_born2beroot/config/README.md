@@ -504,3 +504,51 @@ $ chage -l your_new_username
 ![Command to change user name](https://i.imgur.com/qPdGyNk.png)
   
 ![Command to change user name](https://i.imgur.com/74YOCK1.png)
+
+
+8. Configuring sudoers group
+
+
+8.1. Go to file:
+
+```
+$ sudo nano /etc/sudoers
+```
+
+8.2. Add following for authentication using sudo has to be limited to 3 attempts in the event of an incorrect password:
+
+```
+Defaults     secure_path="..."
+Defaults     passwd_tries=3
+```
+
+8.3. For wrong password warning message, add:
+
+```
+Defaults     badpass_message="Password is wrong, please try again!"
+```
+
+8.4. Each action log file has to be saved in the /var/log/sudo/ folder:
+
+(If there is no “/var/log/sudo” folder, create the sudo folder inside of “/var/log”)
+
+```
+Defaults	logfile="/var/log/sudo/sudo.log"
+Defaults	log_input,log_output
+```
+
+Require tty: (Why use tty? If some non-root code is exploited (a PHP script, for example), the ```requiretty``` option means that the exploit code won't be able to directly upgrade its privileges by running ```sudo```.)
+
+```
+Defaults        requiretty
+```
+
+For security reasons too, the paths that can be used by sudo must be restricted. Example : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+(It was already set there)
+
+```
+Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+```
+
+Now my /etc/sudoers file looks like this
