@@ -372,7 +372,15 @@ Find this line:
 password    requisite         pam_pwquality.so retry=3 
 ```
   
-6.1.5. Add these values (min lower-case 1 letter, min upper-case 1 letter, min digit 1, max same letter repetition 3, whether to check if the password contains the user name in some form (enabled if the value is not 0), the minimum number of characters that must be different from the old password=7, enforce_for_root: same policy for root users):
+6.1.5. Add these values
+
+1. min lower-case 1 letter        *(lcredit =-1)*
+2. min upper-case 1 letter        *(ucredit=-1)*
+3. min digit 1                    *(dcredit=-1)*
+4. max same letter repetition 3   *(maxrepeat=3)*
+5. whether to check if the password contains the user name in some form (enabled if the value is not 0) - *(usercheck=0)*
+6. the minimum number of characters that must be different from the old password=7 - *(difok=7)*
+7. enforce_for_root: same policy for root users - *(enforce_for_root)*
   
 ```
 password    requisite         pam_pwquality.so retry=3 lcredit =-1 ucredit=-1 dcredit=-1 maxrepeat=3 usercheck=0 difok=7 enforce_for_root
@@ -397,7 +405,11 @@ PASS_MIN_DAYS 0
 PASS_WARN_AGE 7
 ```
 
-6.2.2. Change it like this:(max 30 days, min number of days(2) allowed before the modification, receive a notification before expiration at least 7 days before)
+6.2.2. Change it like this:
+
+1. max 30 days
+2. min number of days(2) allowed before the modification
+3. receive a notification before expiration at least (7 days before)
 
 ```
 PASS_MAX_DAYS 30
