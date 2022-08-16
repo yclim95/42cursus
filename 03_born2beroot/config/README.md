@@ -425,3 +425,60 @@ PASS_WARN_AGE 7
 ```
 $ sudo reboot
 ```
+  
+## 7. Create group
+
+```
+$ sudo groupadd user42
+$ sudo groupadd evaluating
+```
+
+7.1. Check if group created:
+
+```
+$ getent group
+```
+  
+![Check if group created](https://i.imgur.com/5HJVvDe.png)
+  
+
+7.2.  Create user and assign into group
+  
+  
+7.2.1. Check the all local users:
+
+```
+$ cut -d: -f1 /etc/passwd
+```
+
+7.2.2. Create the user
+
+```
+$ sudo adduser new_username
+```
+
+7.2.3. Assign an user into “evaluating” group (This is for when you defend)
+
+```
+$ sudo usermod -aG user42 your_username
+$ sudo usermod -aG evaluating your_new_username
+```
+
+7.2.4. Check if the user is in group
+
+```
+$ getent group user42
+$ getent group evaluating
+```
+
+7.2.5. Check which groups user account belongs:
+
+```
+$ groups
+```
+
+7.2.6. Check if password rules working in users:
+
+```
+$ chage -l your_new_username
+```
