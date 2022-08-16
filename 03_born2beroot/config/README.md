@@ -2,6 +2,8 @@
 
 ## Resources
 1. [Linux Change or Rename User Name and UID](https://www.cyberciti.biz/faq/howto-change-rename-user-name-id/)
+2. [Why do I not see my /bin, /var, (etc.) directories in my root partition?](https://askubuntu.com/questions/574609/why-do-i-not-see-my-bin-var-etc-directories-in-my-root-partition)
+
 
 ## 1. Installing Sudo
 
