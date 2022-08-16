@@ -450,6 +450,9 @@ $ getent group
 ```
 $ cut -d: -f1 /etc/passwd
 ```
+  
+![Check the all local users](https://i.imgur.com/0GHNZOJ.png)
+
 
 7.2.2. Create the user
 
