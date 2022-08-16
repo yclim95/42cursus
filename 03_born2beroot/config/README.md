@@ -342,6 +342,10 @@ $ exit
 $ sudo apt-get install libpam-pwquality
 ```
   
+![Installing password quality checking library (libpam-pwquality)](https://i.imgur.com/KicQrKE.png)
+![Installing password quality checking library (libpam-pwquality)](https://i.imgur.com/OtnZxIM.png)
+
+  
 6.1.1. Change the length
 
 ```
