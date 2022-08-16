@@ -1,5 +1,8 @@
 # Configuration
 
+## Resources
+1. [Linux Change or Rename User Name and UID](https://www.cyberciti.biz/faq/howto-change-rename-user-name-id/)
+
 ## 1. Installing Sudo
 
 1.1. Enter Paraphraase
@@ -494,3 +497,9 @@ $ chage -l your_new_username
 ```
   
 ![Check IF the password working rules is working](https://i.imgur.com/BF9kdd7.png)
+
+  
+8. Command to change username if needed
+
+![Command to change user name](https://i.imgur.com/qPdGyNk.png)
+  
