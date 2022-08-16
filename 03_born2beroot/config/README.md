@@ -380,6 +380,8 @@ password    requisite         pam_pwquality.so retry=3 lcredit =-1 ucredit=-1 dc
   
 6.1.6. It will look like this:
   
+![Configure /etc/pam.d/common-password](https://i.imgur.com/SoDnpDH.png)
+  
 
 6.2. Password expiration:
   
