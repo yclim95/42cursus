@@ -404,6 +404,9 @@ PASS_MAX_DAYS 30
 PASS_MIN_DAYS 2
 PASS_WARN_AGE 7
 ```
+  
+![Configure /etc/login.defs](https://i.imgur.com/OkKetVz.png)
+
 
 6.2.3. Reboot the change affects:
 
