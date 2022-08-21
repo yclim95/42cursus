@@ -189,3 +189,51 @@ service.
 For the free choice service, the student being evaluated has to give you a
 simple explanation about how it works and why they think it is useful.
 Please note that NGINX and Apache2 are prohibited.
+
+
+
+
+## 4. Start Evaluation
+
+### 4.1. Create 'evaluating' group
+
+```
+$ sudo groupadd evaluating
+```
+
+### 4.2. Check if group created:
+
+```
+$ getent group
+```
+
+### 4.3. Create a user
+
+```
+$ sudo adduser new_username
+```
+
+### 4.4. Assign an user into “evaluating” group
+
+```
+$ sudo usermod -aG evaluating your_new_username
+```
+
+### 4.5. Check if the user is in group
+
+```
+$ getent group evaluating
+```
+
+
+### 4.6. Check which groups user account belongs:
+
+```
+$ groups
+```
+
+### 4.7. Check if password rules working in users:
+
+```
+$ chage -l your_new_username
+```
