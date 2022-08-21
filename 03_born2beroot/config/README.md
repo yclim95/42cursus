@@ -469,18 +469,18 @@ $ sudo adduser new_username
 ![Add new user](https://i.imgur.com/AviSgKZ.png)
 
 
-7.2.3. Assign an user into “evaluating” group (This is for when you defend)
+7.2.3. Assign an user into “sudo” group (This is for when you defend)
 
 ```
 $ sudo usermod -aG user42 your_username
-$ sudo usermod -aG evaluating your_new_username
+$ sudo usermod -aG sudo your_new_username
 ```
   
 7.2.4. Check if the user is in group
 
 ```
 $ getent group user42
-$ getent group evaluating
+$ getent group sudo
 ```
   
 ![Check if the user is in group](https://i.imgur.com/k0wUA2u.png)
