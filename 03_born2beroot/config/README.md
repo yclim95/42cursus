@@ -654,6 +654,8 @@ $ sudo crontab -u root -e
 ```
 */10 * * * * /usr/local/bin/monitoring.sh
 ```
+  
+![10 means every 10 mins the script  (Crontab rule)](https://i.imgur.com/UpcU7Jh.png)
 
 9.8. Tips
 
