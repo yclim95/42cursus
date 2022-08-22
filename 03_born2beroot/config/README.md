@@ -627,7 +627,7 @@ $ sudo visudo
 your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh
 ```
   
-![Sudo visudo]()
+![Sudo visudo](https://i.imgur.com/ftybQBK.png)
   
   
   
