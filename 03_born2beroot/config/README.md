@@ -475,6 +475,9 @@ $ sudo adduser new_username
 $ sudo usermod -aG user42 your_username
 $ sudo usermod -aG sudo your_new_username
 ```
+
+![Add group to user](https://i.imgur.com/PU9Ss1T.png)
+
   
 7.2.4. Check if the user is in group
 
@@ -483,8 +486,6 @@ $ getent group user42
 $ getent group sudo
 ```
   
-![Check if the user is in group](https://i.imgur.com/k0wUA2u.png)
-
 
 7.2.5. Check which groups user account belongs:
 
@@ -498,7 +499,7 @@ $ groups
 $ chage -l your_new_username
 ```
   
-![Check IF the password working rules is working](https://i.imgur.com/BF9kdd7.png)
+![Check IF the password working rules is working & Check IF group exist](https://i.imgur.com/KY71H0E.png)
 
   
 ## Command to change username if needed
