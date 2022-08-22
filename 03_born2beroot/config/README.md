@@ -657,6 +657,7 @@ $ sudo apt update
   
 ```
 $ sudo apt install dkms linux-headers-$(uname -r) build-essential
+```
   
 3. Install VirtualBox Guest Additions
 
