@@ -574,6 +574,8 @@ $ sudo apt-get update -y
 $ sudo apt-get install -y net-tools
 ```
   
+![Installing Crontab](https://i.imgur.com/NTWoDnG.png)
+  
   
 9.2. Place monitoring.sh in /usr/local/bin/
   
@@ -608,6 +610,8 @@ Broadcast message from root@wil (tty1) (Sun Apr 25 15:45:00 2021):
 #Network: IP 10.0.2.15 (08:00:27:51:9b:a5)
 #Sudo : 42 cmd
 ```
+  
+![CD usr/loca/bin : vim monitoring.sh](https://i.imgur.com/cwIiIZw.png)
   
 9.3. Add the rule that script would execute without sudo password:
   
@@ -700,7 +704,7 @@ $ cd /mnt
 $ sudo ./VBoxLinuxAdditions.run 
 ```
   
-![$ sudo ./VBoxLinuxAdditions.run](https://i.imgur.com/MYRbkka.png)
+![$ sudo ./VBoxLinuxAdditions.run](https://i.imgur.com/SMwtOoP.png)
   
 
 6. restart your Debian 11 instance to finish running the Guest Additions kernel modules
