@@ -3,6 +3,7 @@
 ## Resources
 1. [Linux Change or Rename User Name and UID](https://www.cyberciti.biz/faq/howto-change-rename-user-name-id/)
 2. [Why do I not see my /bin, /var, (etc.) directories in my root partition?](https://askubuntu.com/questions/574609/why-do-i-not-see-my-bin-var-etc-directories-in-my-root-partition)
+3. [How to Install VirtualBox Guest Additions on Debian 11](https://linuxways.net/debian/how-to-install-virtualbox-guest-additions-on-debian-11/)
 
 
 ## 1. Installing Sudo
@@ -640,4 +641,53 @@ If you have this error when you reboot your VM, change the Display settings in y
 
 ```
 $ drm:vmw_host_log *ERROR* Failed to send host log message.
+```
+
+  
+  
+## How to Install VirtualBox Guest Additions on Debian 11 (Copy & Paste)
+  
+1. Update packages
+  
+```
+$ sudo apt update
+```
+  
+2. install the DKMS (Dynamic kernel Module Support) program dependencies used for generating kernel modules, the kernel headers, and build tools.
+  
+```
+$ sudo apt install dkms linux-headers-$(uname -r) build-essential
+  
+3. Install VirtualBox Guest Additions
+
+Top menu: Settings -> Devices -> Insert Guest Additions CD Image
+  
+4. mount it in /mnt directory as shown.
+  
+```
+$ sudo mount /dev/cdrom /mnt
+```
+
+You can confirm the contents as follows using the ls command.
+
+```
+$ ls -l /mnt
+```
+  
+![VirtualBox Guest Addition: Copy & Paste](https://i.imgur.com/5E61486.png)
+  
+5. navigate to the /mnt directory to execute VBoxLinuxAdditions.run script
+  
+```
+$ cd /mnt
+$ sudo ./VBoxLinuxAdditions.run 
+```
+  
+![$ sudo ./VBoxLinuxAdditions.run](https://i.imgur.com/MYRbkka.png)
+  
+
+6. restart your Debian 11 instance to finish running the Guest Additions kernel modules
+  
+```
+$ sudo reboot 
 ```
