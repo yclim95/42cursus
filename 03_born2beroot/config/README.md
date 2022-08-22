@@ -509,7 +509,8 @@ $ chage -l your_new_username
 ![Command to change user name](https://i.imgur.com/74YOCK1.png)
 
 
-8. Configuring sudoers group
+  
+## 8. Configuring sudoers group
 
 
 8.1. Go to file:
@@ -559,3 +560,84 @@ Now my /etc/sudoers file looks like this
 ![Configuring sudoers group](https://i.imgur.com/d2hzF2x.png)
 
 ![Configuring sudoers group](https://i.imgur.com/aOdnYTV.png)
+
+  
+## 9.  Crontab configuration
+  
+> “A crontab file contains instructions for the cron(8) daemon in the following simplified manner: “run this command at this time on this date”
+  
+9.1. Install the netstat tools
+
+```
+$ sudo apt-get update -y
+$ sudo apt-get install -y net-tools
+```
+  
+  
+9.2. Place monitoring.sh in /usr/local/bin/
+  
+```bash
+#!/bin/bash
+wall $'#Architecture: ' `hostnamectl | grep "Operating System" | cut -d ' ' -f5- ` `awk -F':' '/^model name/ {print $2}' /proc/cpuinfo | uniq | sed -e 's/^[ \t]*//'` `arch` \
+$'\n#CPU physical: '`cat /proc/cpuinfo | grep processor | wc -l` \
+$'\n#vCPU:  '`cat /proc/cpuinfo | grep processor | wc -l` \
+$'\n'`free -m | awk 'NR==2{printf "#Memory Usage: %s/%sMB (%.2f%%)", $3,$2,$3*100/$2 }'` \
+$'\n'`df -h | awk '$NF=="/"{printf "#Disk Usage: %d/%dGB (%s)", $3,$2,$5}'` \
+$'\n'`top -bn1 | grep load | awk '{printf "#CPU Load: %.2f\n", $(NF-2)}'` \
+$'\n#Last boot: ' `who -b | awk '{print $3" "$4" "$5}'` \
+$'\n#LVM use: ' `lsblk |grep lvm | awk '{if ($1) {print "yes";exit;} else {print "no"} }'` \
+$'\n#Connection TCP:' `netstat -an | grep ESTABLISHED |  wc -l` \
+$'\n#User log: ' `who | cut -d " " -f 1 | sort -u | wc -l` \
+$'\nNetwork: IP ' `hostname -I`"("`ip a | grep link/ether | awk '{print $2}'`")" \
+$'\n#Sudo:  ' `grep 'sudo ' /var/log/auth.log | wc -l`
+```
+  
+9.3. Add the rule that script would execute without sudo password:
+  
+Open sudoers file:
+  
+```
+$ sudo visudo
+```
+
+9.4. Add this line:
+
+```
+your_username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh
+```
+  
+![Sudo visudo]()
+  
+  
+  
+9.4. Reboot
+
+```
+$ sudo reboot
+```
+
+9.5. Execute the script as su:
+
+```
+$ sudo /usr/local/bin/monitoring.sh
+```
+
+9.6. Open crontab and add the rule:
+
+```
+$ sudo crontab -u root -e
+```
+
+9.7. Add at end as follows: (*/10 means every 10 mins the script will show)
+
+```
+*/10 * * * * /usr/local/bin/monitoring.sh
+```
+
+9.8. Tips
+
+If you have this error when you reboot your VM, change the Display settings in your VirtualBox settings. [See the solution here](https://unix.stackexchange.com/questions/502540/why-does-drmvmw-host-log-vmwgfx-error-failed-to-send-host-log-message-sh).
+
+```
+$ drm:vmw_host_log *ERROR* Failed to send host log message.
+```
