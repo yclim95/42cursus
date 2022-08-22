@@ -150,7 +150,7 @@ $ sudo apt-get install vim
   
 ![Install Vim Part1](https://i.imgur.com/lAn5SbY.png)
   
-![Install Vim Part2]([https://i.imgur.com/lAn5SbY.png](https://i.imgur.com/qFjOG7u.png))
+![Install Vim Part2](https://i.imgur.com/qFjOG7u.png)
 
 
 1.6.4.  Installing [Oh my zsh](https://ohmyz.sh/)
