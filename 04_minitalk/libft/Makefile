@@ -6,7 +6,7 @@
 #    By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 18:09:24 by lyao-che          #+#    #+#              #
-#    Updated: 2022/06/10 14:31:26 by lyao-che         ###   ########.fr        #
+#    Updated: 2022/08/27 13:37:02 by lyao-che         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,9 @@ SRC_PART2 = ./ft_substr.c	\
 			./ft_putchar_fd.c	\
 			./ft_putstr_fd.c	\
 			./ft_putendl_fd.c	\
-			./ft_putnbr_fd.c
+			./ft_putnbr_fd.c	\
+			./ft_add_char_to_str.c	\
+			./ft_is_numeric_str.c
 
 SRCS = $(SRC_PART1)  $(SRC_PART2)
 
