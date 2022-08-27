@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 09:14:36 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/06/06 09:22:59 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/27 13:35:33 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*ft_add_char_to_str(char *str, char c);
+int	ft_is_numeric_str(char *str);
 
 #endif
