@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/27 13:21:14 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/27 13:55:18 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/27 14:00:01 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_add_first_char(char c)
 char	*ft_add_char_to_str(char *str, char c)
 {
 	char	*add_char;
-	int	c;
+	int		c;
 
 	if (!c)
 		return (NULL);
