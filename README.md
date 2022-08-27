@@ -16,3 +16,17 @@
 ## Resources to get prepared using your own PC
 1. [42 Norminette setup](https://github.com/42School/norminette)
 2. [42 Header Setup](https://github.com/42Paris/42header)
+3. [Setup your vim editor - vimrc](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/)
+  ```
+  ~/.vimrc
+  set number
+  set ruler
+  syntax on
+  set mouse=a
+  cd ~/.vim/colors
+  curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+  colorscheme molokai
+  set nocompatible
+  filetype on
+  filetype indent on
+  ```
