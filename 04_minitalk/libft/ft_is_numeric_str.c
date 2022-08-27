@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/27 13:10:42 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/27 13:15:47 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/27 14:04:08 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_is_numeric_str(char *str)
 		c++;
 	while (str[c++])
 	{
-		if(!ft_isdigit(str[c]))
+		if (!ft_isdigit(str[c]))
 			return (0);
 	}
 	return (1);
