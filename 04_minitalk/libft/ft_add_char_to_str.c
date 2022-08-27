@@ -6,7 +6,7 @@
 /*   By: lyao-che <lyao-che@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/27 13:21:14 by lyao-che          #+#    #+#             */
-/*   Updated: 2022/08/27 13:33:09 by lyao-che         ###   ########.fr       */
+/*   Updated: 2022/08/27 13:55:18 by lyao-che         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 char	*ft_add_first_char(char c)
 {
-	char	*addChar;
+	char	*add_char;
 
 	add_char = (char *)malloc(sizeof(char) * 2);
-	if (!addChar)
+	if (!add_char)
 		return (NULL);
-	addChar[0] = c;
-	addChar[1] = '\0';
-	return (addChar);
+	add_char[0] = c;
+	add_char[1] = '\0';
+	return (add_char);
 }
 
 char	*ft_add_char_to_str(char *str, char c)
 {
-	int	count;
-	char	*addChar;
+	char	*add_char;
+	int	c;
 
 	if (!c)
 		return (NULL);
 	if (!str)
 		return (ft_add_first_char(c));
-	addChar = (char *)malloc(sizeof(char) * (2 + ft_strlen(str)));
-	if (!addChar)
+	add_char = (char *)malloc(sizeof(char) * (2 + ft_strlen(str)));
+	if (!add_char)
 	{
 		free(str);
 		return (NULL);
@@ -42,11 +42,11 @@ char	*ft_add_char_to_str(char *str, char c)
 	count = 0;
 	while (str[count])
 	{
-		addChar[count] = str[count];
+		add_char[count] = str[count];
 		c++;
 	}
 	free(str);
-	addChar[count++] = c;
-	addChar[count] = '\0';
-	return (addChar);
+	add_char[count++] = c;
+	add_char[count] = '\0';
+	return (add_char);
 }
