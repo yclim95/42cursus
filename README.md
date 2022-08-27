@@ -11,3 +11,8 @@
 6. Project-Based Learning
 
 ![Myself @42KL](https://i.imgur.com/6to9ib1.jpg)
+
+
+## Resources to get prepared using your own PC
+1. [42 Norminette setup](https://github.com/42School/norminette)
+2. [42 Header Setup](https://github.com/42Paris/42header)
