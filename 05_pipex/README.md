@@ -12,3 +12,4 @@
 
 ## Resources
 1. [What is perror in C?](https://www.educative.io/answers/what-is-perror-in-c)
+2. [execve](https://man7.org/linux/man-pages/man2/execve.2.html)
