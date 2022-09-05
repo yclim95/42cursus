@@ -30,3 +30,14 @@
   filetype on
   filetype indent on
   ```
+  
+## Git issue
+
+*xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun*
+
+```bash
+Lims-iMac:42cursus YCLim$ git status
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Lims-iMac:42cursus YCLim$ xcode-select --install
+xcode-select: note: install requested for command line developer tools
+```
