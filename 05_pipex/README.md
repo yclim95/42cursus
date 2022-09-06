@@ -23,12 +23,12 @@
 3. **Makefile** : NAME, all, clean, fclean, re
 4. **Arguments** : file1 cmd1 cmd2 file2
 5. External functs.
-  1. open, close, read, write,
-  2. malloc, free, perror,
-  3. strerror, access, dup, dup2,
-  4. execve, exit, fork, pipe,
-  5. unlink, wait, waitpid
-  6. ft_printf and any equivalent YOU coded
+   1. open, close, read, write,
+   2. malloc, free, perror,
+   3. strerror, access, dup, dup2,
+   4. execve, exit, fork, pipe,
+   5. unlink, wait, waitpid
+   6. ft_printf and any equivalent YOU coded
 6. **Libft authorized** :  Yes
 7. **Description** :  This project is about handling pipes.
 8. Your program will be executed as follows:
