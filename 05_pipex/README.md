@@ -34,17 +34,17 @@
 8. Your program will be executed as follows:
   ```./pipex file1 cmd1 cmd2 file2```
 9. It must take 4 arguments:
-  1. file1 and file2 are file names.
-  2. cmd1 and cmd2 are shell commands with their parameters.
+   1. ```file1``` and ```file2``` are file names.
+   2. ```cmd1``` and ```cmd2``` are shell commands with their parameters.
 10. Examples
-  1. ```$> ./pipex infile "ls -l" "wc -l" outfile```
-    - Should behave like: < infile ls -l | wc -l > outfile
-  2. ```$> ./pipex infile "grep a1" "wc -w" outfile```
-    - Should behave like: < infile grep a1 | wc -w > outfile
+    1. ```$> ./pipex infile "ls -l" "wc -l" outfile```
+       - Should behave like: < infile ls -l | wc -l > outfile
+    2. ```$> ./pipex infile "grep a1" "wc -w" outfile```
+       - Should behave like: < infile grep a1 | wc -w > outfile
 11. **REQUIREMENTS**: Your project must comply with the following rules:
-  1. You have to turn in a Makefile which will compile your source files. It must not
+    1. You have to turn in a Makefile which will compile your source files. It must not
 relink.
-  2. You have to handle errors thoroughly. In no way your program should quit unexpectedly (segmentation fault, bus error, double free, and so forth).
-  3. Your program mustn’t have memory leaks.
-  4. If you have any doubt, handle the errors like the shell command:
-    ```< file1 cmd1 | cmd2 > file2```
+    2. You have to handle errors thoroughly. In no way your program should quit unexpectedly (segmentation fault, bus error, double free, and so forth).
+    3. Your program mustn’t have memory leaks.
+    4. If you have any doubt, handle the errors like the shell command:
+      ```< file1 cmd1 | cmd2 > file2```
