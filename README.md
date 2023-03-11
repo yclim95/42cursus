@@ -43,7 +43,7 @@ xcode-select: note: install requested for command line developer tools
 ```
 
 
-## [Developer Roadmap Flowchart](https://roadmap.sh/) -  Thanks to @kamranahmedse | @developer-roadmap
+## [Developer Roadmap Flowchart](https://roadmap.sh/) -  Thanks to [@kamranahmedse](https://github.com/kamranahmedse) | @developer-roadmap
 1. Role-based
    1. [Frontend](https://roadmap.sh/frontend)
    2. [Backend](https://roadmap.sh/backend)
