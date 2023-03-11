@@ -41,3 +41,23 @@ xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools
 Lims-iMac:42cursus YCLim$ xcode-select --install
 xcode-select: note: install requested for command line developer tools
 ```
+
+
+## Resources
+1. [Developer Roadmap Flowchart](https://roadmap.sh/)
+  1. Role-based
+    1. Frontend
+    2. Backend
+    3. DBA
+    4. Android
+    5. Blockchain
+    6. Cyber Security
+    7. Flutter
+    8. Software Architect
+    9. QA
+    10. React Native (Upcoming...)
+  2. Skill based
+  3. Best practice
+    1. Frontend Performance
+    2. API Security
+    3. AWS
